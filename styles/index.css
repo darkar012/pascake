@@ -57,6 +57,33 @@ top: 41px;
     top: 822px;
     }
 
+    #cake1{
+        position: absolute;
+        width: 203px;
+        height: 27px;
+        left: 121px;
+        top: 1326px;
+        
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 27px;
+    }
+
+    #cake1--description{
+        position: absolute;
+        width: 229px;
+        height: 33px;
+        left: 121px;
+        top: 1357px;
+
+        font-style: normal;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 33px;
+        color: #FFA3B9;
+    }
+
     #pic--cake1{
         position: absolute;
         width: 353px;
@@ -65,6 +92,33 @@ top: 41px;
         top: 948px;
         }
         
+    #cake2{
+        position: absolute;
+        width: 125px;
+        height: 27px;
+        left: 570px;
+        top: 1326px;
+        
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 27px;
+    }
+
+    #cake2--description{
+        position: absolute;
+        width: 227px;
+        height: 33px;
+        left: 570px;
+        top: 1357px;
+
+        font-style: normal;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 33px;
+    
+        color: #FFA3B9;
+    }
         #pic--cake2{
         position: absolute;
         width: 353px;
@@ -74,6 +128,39 @@ top: 41px;
         
         }
         
+    
+    #cake3{
+        position: absolute;
+        width: 170px;
+        height: 27px;
+        left: 1016px;
+        top: 1326px;
+        
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 27px;
+    }
+
+    #cake3--description{
+            position: absolute;
+            width: 228px;
+            height: 33px;
+            left: 1016px;
+            top: 1357px;
+
+
+            font-style: normal;
+            font-weight: 600;
+            font-size: 22px;
+            line-height: 33px;
+
+
+color: #FFA3B9;
+        
+    }
+
+
         #pic--cake3{
         position: absolute;
         width: 353px;
@@ -100,6 +187,35 @@ top: 41px;
     top: 1569px;
     }
 
+    #dess1{
+        position: absolute;
+        width: 311px;
+        height: 54px;
+        left: 124px;
+        top: 2050px;
+
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 27px;
+    }
+
+    #dess1--description{
+position: absolute;
+width: 109px;
+height: 33px;
+left: 124px;
+top: 2104px;
+
+font-family: Poppins;
+font-style: normal;
+font-weight: 600;
+font-size: 22px;
+line-height: 33px;
+
+color: #FFA3B9;
+    }
+
     #pic--dess1{
         position: absolute;
         width: 353px;
@@ -108,12 +224,71 @@ top: 41px;
         top: 1695px;    
     }
 
+    #dess2{
+        position: absolute;
+        width: 157px;
+        height: 27px;
+        left: 573px;
+        top: 2073px;
+        
+
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 27px;
+    }
+
+    #dess2--description{
+        position: absolute;
+        width: 108px;
+        height: 33px;
+        left: 573px;
+        top: 2104px;
+
+        font-style: normal;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 33px;
+   
+        color: #FFA3B9;
+    }
     #pic--dess2{
         position: absolute;
         width: 354px;
         height: 341px;
         left: 546px;
         top: 1695px;
+    }
+
+    #dess3{
+        position: absolute;
+        width: 289px;
+        height: 27px;
+        left: 1019px;
+        top: 2073px;
+        
+
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 27px;
+    }
+
+    #dess3--description{
+        position: absolute;
+        width: 109px;
+        height: 33px;
+        left: 1019px;
+        top: 2104px;
+        
+
+        font-style: normal;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 33px;
+  
+        color: #FFA3B9;
+        
     }
 
     #pic--dess3{
@@ -142,8 +317,16 @@ top: 41px;
         position: absolute;
         width: 626px;
         height: 575px;
-        left: 0px;
-        top: 32px;
+        left: 110px;
+        top: 2626px;
+    }
+
+    #location{
+        position: absolute;
+        width: 131px;
+        height: 131px;
+        left: 955px;
+        top: 2636px;    
     }
     
     /*sobre nosotras*/
@@ -153,6 +336,27 @@ top: 41px;
     height: 96px;
     left: 93px;
     top: 3345px;
+    }
+    #us{
+        position: absolute;
+        width: 492px;
+        height: 144px;
+        left: 132px;
+        top: 3912px;
+
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 36px;
+        text-align: center;
+    }
+
+    #right{
+        position: absolute;
+        width: 64px;
+        height: 64px;
+        left: 1330px;
+        top: 2866px;
     }
 
     #pic--logo2{
@@ -306,10 +510,39 @@ top: 41px;
         text-align: center;
         
     }
+
+    #instagram{
+        position: absolute;
+        width: 49px;
+        height: 49px;
+        left: 121px;
+        top: 4728px;
+    }
+
+    #whatsapp{
+        position: absolute;
+        width: 47px;
+        height: 47px;
+        left: 177px;
+        top: 4730px;
+    }
+
+    #rappi{
+        position: absolute;
+        height: 46.56px;
+        width: 110px;
+        left: 231px;
+        top: 4736px;
+        border-radius: 0px;
+
+    }
     
     .foot{
         background-color: rgba(242, 237, 240, 1);
     }
     
+    footer{
+        margin-bottom: 200px;
+    }
     
     
