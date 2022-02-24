@@ -25,12 +25,28 @@ a{
  }
 
  .up{
-     
     text-align: right;
     padding: 15px;
     font-size: 22px;
     line-height: 33px;
+  }
+
+#cart{
+position: absolute;
+width: 40px;
+height: 40px;
+left: 1290px;
+top: 41px;
 }
+
+#user{
+position: absolute;
+width: 42px;
+height: 42px;
+left: 1339px;
+top: 41px;
+}
+
 
 /*tortas*/
 #cakes{
@@ -40,10 +56,36 @@ a{
     left: 94px;
     top: 822px;
     }
+
+    #pic--cake1{
+        position: absolute;
+        width: 353px;
+        height: 341px;
+        left: 96px;
+        top: 948px;
+        }
+        
+        #pic--cake2{
+        position: absolute;
+        width: 353px;
+        height: 336px;
+        left: 543px;
+        top: 953px;
+        
+        }
+        
+        #pic--cake3{
+        position: absolute;
+        width: 353px;
+        height: 341px;
+        left: 988px;
+        top: 948px;
+        
+        }
     
     
     .text{
-        font-style: normal;
+        font-style:normal;
         font-weight: 300;
         font-size: 18px;
         line-height: 27px;
@@ -57,6 +99,35 @@ a{
     left: 93px;
     top: 1569px;
     }
+
+    #pic--dess1{
+        position: absolute;
+        width: 353px;
+        height: 341px;
+        left: 100px;
+        top: 1695px;    
+    }
+
+    #pic--dess2{
+        position: absolute;
+        width: 354px;
+        height: 341px;
+        left: 546px;
+        top: 1695px;
+    }
+
+    #pic--dess3{
+        position: absolute;
+        width: 354px;
+        height: 341px;
+        left: 993px;
+        top: 1695px;
+    }
+
+    .container{
+        background-color:white;
+       
+    }
     
     /*puntos de venta*/
     #places{
@@ -66,6 +137,14 @@ a{
     left: 93px;
     top: 2466px;
     }
+
+    #bakery{
+        position: absolute;
+        width: 626px;
+        height: 575px;
+        left: 0px;
+        top: 32px;
+    }
     
     /*sobre nosotras*/
     #about{
@@ -74,6 +153,43 @@ a{
     height: 96px;
     left: 93px;
     top: 3345px;
+    }
+
+    #pic--logo2{
+        position: absolute;
+        width: 338px;
+        height: 338px;
+        left: 209px;
+        top: 3533px;
+    }
+
+    #pic--sobre1{
+        position: absolute;
+        width: 301px;
+        height: 290px;
+        left: 685px;
+        top: 3503px;
+    }
+    #pic--sobre2{
+        position: absolute;
+        width: 301px;
+        height: 290.11px;
+        left: 1020px;
+        top: 3503px;
+    }
+    #pic--sobre3{
+        position: absolute;
+        width: 299px;
+        height: 290px;
+        left: 685px;
+        top: 3829px;    
+    }
+    #pic--sobre4{
+        position: absolute;
+        width: 301px;
+        height: 290.33px;
+        left: 1020px;
+        top: 3829px;   
     }
     
     /*inscripcion a newsletter*/
