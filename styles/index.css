@@ -10,4 +10,30 @@ body{
     height: 103px;
     left: 49px;
     top: 8px;
+ }
+
+ .up{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 33px;
+}
+
+/*tortas*/
+#cakes{
+    position: absolute;
+    width: 240px;
+    height: 96px;
+    left: 94px;
+    top: 822px;
+    }
+    
+    
+    .text{
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 27px;
     }
