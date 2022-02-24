@@ -2,3 +2,12 @@ body{
     background-color:rgba(247, 247, 247, 1);
     font-family: 'Poppins', sans-serif;
 }
+
+/*header*/
+#logo{
+    position: absolute;
+    width: 177px;
+    height: 103px;
+    left: 49px;
+    top: 8px;
+    }
