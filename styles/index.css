@@ -1,10 +1,22 @@
-body{
+html, body{
     background-color:rgba(247, 247, 247, 1);
     font-family: 'Poppins', sans-serif;
 }
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+a{
+    text-decoration: none;
+}
+
 /*header*/
 #logo{
+    font-style: normal;
     position: absolute;
     width: 177px;
     height: 103px;
@@ -13,9 +25,9 @@ body{
  }
 
  .up{
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: normal;
+     
+    text-align: right;
+    padding: 15px;
     font-size: 22px;
     line-height: 33px;
 }
@@ -31,9 +43,157 @@ body{
     
     
     .text{
-        font-family: Poppins;
         font-style: normal;
         font-weight: 300;
         font-size: 18px;
         line-height: 27px;
     }
+
+    /*postres*/
+#desserts{
+    position: absolute;
+    width: 269px;
+    height: 96px;
+    left: 93px;
+    top: 1569px;
+    }
+    
+    /*puntos de venta*/
+    #places{
+    position: absolute;
+    width: 559px;
+    height: 96px;
+    left: 93px;
+    top: 2466px;
+    }
+    
+    /*sobre nosotras*/
+    #about{
+    position: absolute;
+    width: 554px;
+    height: 96px;
+    left: 93px;
+    top: 3345px;
+    }
+    
+    /*inscripcion a newsletter*/
+    #newsletter{
+    position: absolute;
+    width: 308px;
+    height: 36px;
+    left: 494px;
+    top: 4378px;
+    
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    }
+    
+    .description--title{
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 64px;
+    line-height: 96px;
+    }
+    
+    #name{
+    position: absolute;
+    width: 97px;
+    height: 36px;
+    left: 492px;
+    top: 4440px;
+    }
+    
+    #email{
+    position: absolute;
+    width: 82px;
+    height: 36px;
+    left: 492px;
+    top: 4493px;
+    
+    }
+    
+    #phone{
+        position: absolute;
+        width: 102px;
+        height: 36px;
+        left: 492px;
+        top: 4545px;
+    }
+    
+    .categories{
+
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    }
+    
+    /*footer*/
+    #apps{
+        position: absolute;
+        width: 204px;
+        height: 36px;
+        left: 123px;
+        top: 4690px;    
+    }
+    
+    #contact{
+        position: absolute;
+        width: 114px;
+        height: 36px;
+        left: 1232px;
+        top: 4690px;    
+    }
+    
+    #phones{
+        position: absolute;
+        width: 306px;
+        height: 36px;
+        left: 1044px;
+        top: 4722px;   
+    
+
+        font-style: normal;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 36px;
+        text-align: center;
+    }
+    
+    #emails{
+        position: absolute;
+        width: 375px;
+        height: 36px;
+        left: 975px;
+        top: 4761px;
+    
+
+        font-style: normal;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 36px;
+        text-align: center;
+        
+    }
+    
+    .down{
+
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 36px;
+        text-align: center;
+        
+    }
+    
+    .foot{
+        background-color: rgba(242, 237, 240, 1);
+    }
+    
+    
+    
