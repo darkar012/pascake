@@ -1,595 +1,610 @@
-html, body{
-    background-color:rgba(247, 247, 247, 1);
-    font-family: 'Poppins', sans-serif;
+html,
+body {
+  background-color: rgba(247, 247, 247, 1);
+  font-family: 'Poppins', sans-serif;
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
 
-header{
-    height: 100px;
+ul {
+  list-style: none;
 }
+
 
 /*header*/
-#logo{
-    font-style: normal;
-    position: absolute;
-    width: 177px;
-    height: 103px;
-    left: 49px;
-    top: 8px;
- }
 
- .up{
-   
-     color: black;
-     margin-left: 100px;
-     font-size: 22px;
-     line-height: 33px;
-  }
-
-#cart{
-position: absolute;
-width: 40px;
-height: 40px;
-left: 1290px;
-top: 41px;
+.header {
+  padding: 20px 50px;
+  display: flex;
+  align-items: center;
+  width: 100%;
 }
 
-#user{
-position: absolute;
-width: 42px;
-height: 42px;
-left: 1339px;
-top: 41px;
+nav {
+  justify-content: space-between;
+  display: flex;
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.menu-item {
+  margin: 0 10px;
+  position: relative;
+}
+
+.logo {
+  width: 177px;
+}
+
+.menu__item {
+    margin: 0 20px;
+}
+
+.menu__item a {
+    color: black;
+    font-size: 22px;
+    line-height: 33px;
+}
+
+
+
+.bakery {
+    padding: 20px 50px;
+}
+
+.deserts {
+    display: flex;
+    justify-content: space-between;
+}
+
+.desert {
+    width: 30%;
+}
+
+.desert__caption {
+    background-color: white;
+    padding: 20px;
+}
+
+.desert__description{
+    color: #FFA3B9; 
+}
+
+
+
+#cart {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: 90%;
+  top: 4;
+}
+
+#user {
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  left: 93%;
+  top: 41px;
 }
 
 
 /*tortas*/
-#cakes{
-    position: absolute;
-    width: 240px;
-    height: 96px;
-    left: 94px;
-    top: 822px;
-    }
 
-    #cake1{
-        position: absolute;
-        width: 203px;
-        height: 27px;
-        left: 121px;
-        top: 1326px;
-        
-        font-style: normal;
-        font-weight: normal;
-        font-size: 18px;
-        line-height: 27px;
-    }
+#cakes {
+  position: absolute;
+  width: 240px;
+  height: 96px;
+  left: 94px;
+  top: 822px;
+}
 
-    #cake1--description{
-        position: absolute;
-        width: 229px;
-        height: 33px;
-        left: 121px;
-        top: 1357px;
+#cake1 {
+  position: absolute;
+  width: 203px;
+  height: 27px;
+  left: 121px;
+  top: 1326px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+}
 
-        font-style: normal;
-        font-weight: 600;
-        font-size: 22px;
-        line-height: 33px;
-        color: #FFA3B9;
-    }
+#cake1--description {
+  position: absolute;
+  width: 229px;
+  height: 33px;
+  left: 121px;
+  top: 1357px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 33px;
+  color: #FFA3B9;
+}
 
-    #pic--cake1{
-        position: absolute;
-        width: 353px;
-        height: 341px;
-        left: 96px;
-        top: 948px;
-        }
-        
-    #cake2{
-        position: absolute;
-        width: 125px;
-        height: 27px;
-        left: 570px;
-        top: 1326px;
-        
-        font-style: normal;
-        font-weight: normal;
-        font-size: 18px;
-        line-height: 27px;
-    }
+#pic--cake1 {
+  position: absolute;
+  width: 353px;
+  height: 341px;
+  left: 96px;
+  top: 948px;
+}
 
-    #cake2--description{
-        position: absolute;
-        width: 227px;
-        height: 33px;
-        left: 570px;
-        top: 1357px;
+#cake2 {
+  position: absolute;
+  width: 125px;
+  height: 27px;
+  left: 570px;
+  top: 1326px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+}
 
-        font-style: normal;
-        font-weight: 600;
-        font-size: 22px;
-        line-height: 33px;
-    
-        color: #FFA3B9;
-    }
-        #pic--cake2{
-        position: absolute;
-        width: 353px;
-        height: 336px;
-        left: 543px;
-        top: 953px;
-        
-        }
-        
-    
-    #cake3{
-        position: absolute;
-        width: 170px;
-        height: 27px;
-        left: 1016px;
-        top: 1326px;
-        
-        font-style: normal;
-        font-weight: normal;
-        font-size: 18px;
-        line-height: 27px;
-    }
+#cake2--description {
+  position: absolute;
+  width: 227px;
+  height: 33px;
+  left: 570px;
+  top: 1357px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 33px;
+  color: #FFA3B9;
+}
 
-    #cake3--description{
-            position: absolute;
-            width: 228px;
-            height: 33px;
-            left: 1016px;
-            top: 1357px;
+#pic--cake2 {
+  position: absolute;
+  width: 353px;
+  height: 336px;
+  left: 543px;
+  top: 953px;
+}
+
+#cake3 {
+  position: absolute;
+  width: 170px;
+  height: 27px;
+  left: 1016px;
+  top: 1326px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+#cake3--description {
+  position: absolute;
+  width: 228px;
+  height: 33px;
+  left: 1016px;
+  top: 1357px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 33px;
+  color: #FFA3B9;
+}
+
+#pic--cake3 {
+  position: absolute;
+  width: 353px;
+  height: 341px;
+  left: 988px;
+  top: 948px;
+}
+
+.text {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 27px;
+}
 
 
-            font-style: normal;
-            font-weight: 600;
-            font-size: 22px;
-            line-height: 33px;
-            color: #FFA3B9;
-        
-    }
+/*postres*/
+
+#desserts {
+  position: absolute;
+  width: 269px;
+  height: 96px;
+  left: 93px;
+  top: 1569px;
+}
+
+#dess1 {
+  position: absolute;
+  width: 311px;
+  height: 54px;
+  left: 124px;
+  top: 2050px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+#dess1--description {
+  position: absolute;
+  width: 109px;
+  height: 33px;
+  left: 124px;
+  top: 2104px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 33px;
+  color: #FFA3B9;
+}
+
+#pic--dess1 {
+  position: absolute;
+  width: 353px;
+  height: 341px;
+  left: 100px;
+  top: 1695px;
+}
+
+#dess2 {
+  position: absolute;
+  width: 157px;
+  height: 27px;
+  left: 573px;
+  top: 2073px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+#dess2--description {
+  position: absolute;
+  width: 108px;
+  height: 33px;
+  left: 573px;
+  top: 2104px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 33px;
+  color: #FFA3B9;
+}
+
+#pic--dess2 {
+  position: absolute;
+  width: 354px;
+  height: 341px;
+  left: 546px;
+  top: 1695px;
+}
+
+#dess3 {
+  position: absolute;
+  width: 289px;
+  height: 27px;
+  left: 1019px;
+  top: 2073px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+#dess3--description {
+  position: absolute;
+  width: 109px;
+  height: 33px;
+  left: 1019px;
+  top: 2104px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 33px;
+  color: #FFA3B9;
+}
+
+#pic--dess3 {
+  position: absolute;
+  width: 354px;
+  height: 341px;
+  left: 993px;
+  top: 1695px;
+}
+
+.container {
+  background-color: white;
+}
 
 
-        #pic--cake3{
-        position: absolute;
-        width: 353px;
-        height: 341px;
-        left: 988px;
-        top: 948px;
-        
-        }
-    
-    
-    .text{
-        font-style:normal;
-        font-weight: 300;
-        font-size: 18px;
-        line-height: 27px;
-    }
+/*puntos de venta*/
 
-    /*postres*/
-#desserts{
-    position: absolute;
-    width: 269px;
-    height: 96px;
-    left: 93px;
-    top: 1569px;
-    }
+#places {
+  position: absolute;
+  width: 559px;
+  height: 96px;
+  left: 93px;
+  top: 2466px;
+}
 
-    #dess1{
-        position: absolute;
-        width: 311px;
-        height: 54px;
-        left: 124px;
-        top: 2050px;
+#bakery {
+  position: absolute;
+  width: 626px;
+  height: 575px;
+  left: 110px;
+  top: 2626px;
+}
 
-        font-style: normal;
-        font-weight: normal;
-        font-size: 18px;
-        line-height: 27px;
-    }
+#location {
+  position: absolute;
+  width: 131px;
+  height: 131px;
+  left: 960px;
+  top: 2636px;
+}
 
-    #dess1--description{
-position: absolute;
-width: 109px;
-height: 33px;
-left: 124px;
-top: 2104px;
+#text--places {
+  position: absolute;
+  width: 503px;
+  height: 108px;
+  left: 782px;
+  top: 2914px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 54px;
+}
 
-font-family: Poppins;
-font-style: normal;
-font-weight: 600;
-font-size: 22px;
-line-height: 33px;
+#direction {
+  position: absolute;
+  width: 177px;
+  height: 36px;
+  left: 782px;
+  top: 3030px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 36px;
+  color: #000000;
+}
 
-color: #FFA3B9;
-    }
 
-    #pic--dess1{
-        position: absolute;
-        width: 353px;
-        height: 341px;
-        left: 100px;
-        top: 1695px;    
-    }
+/*sobre nosotras*/
 
-    #dess2{
-        position: absolute;
-        width: 157px;
-        height: 27px;
-        left: 573px;
-        top: 2073px;
-        
+#about {
+  position: absolute;
+  width: 554px;
+  height: 96px;
+  left: 93px;
+  top: 3345px;
+}
 
-        font-style: normal;
-        font-weight: normal;
-        font-size: 18px;
-        line-height: 27px;
-    }
+#us {
+  position: absolute;
+  width: 492px;
+  height: 144px;
+  left: 132px;
+  top: 3912px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+}
 
-    #dess2--description{
-        position: absolute;
-        width: 108px;
-        height: 33px;
-        left: 573px;
-        top: 2104px;
+#right {
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  left: 1330px;
+  top: 2866px;
+}
 
-        font-style: normal;
-        font-weight: 600;
-        font-size: 22px;
-        line-height: 33px;
-   
-        color: #FFA3B9;
-    }
-    #pic--dess2{
-        position: absolute;
-        width: 354px;
-        height: 341px;
-        left: 546px;
-        top: 1695px;
-    }
+#pic--logo2 {
+  position: absolute;
+  width: 338px;
+  height: 338px;
+  left: 209px;
+  top: 3533px;
+}
 
-    #dess3{
-        position: absolute;
-        width: 289px;
-        height: 27px;
-        left: 1019px;
-        top: 2073px;
-        
+#pic--sobre1 {
+  position: absolute;
+  width: 301px;
+  height: 290px;
+  left: 685px;
+  top: 3503px;
+}
 
-        font-style: normal;
-        font-weight: normal;
-        font-size: 18px;
-        line-height: 27px;
-    }
+#pic--sobre2 {
+  position: absolute;
+  width: 301px;
+  height: 290.11px;
+  left: 1020px;
+  top: 3503px;
+}
 
-    #dess3--description{
-        position: absolute;
-        width: 109px;
-        height: 33px;
-        left: 1019px;
-        top: 2104px;
-        
+#pic--sobre3 {
+  position: absolute;
+  width: 299px;
+  height: 290px;
+  left: 685px;
+  top: 3829px;
+}
 
-        font-style: normal;
-        font-weight: 600;
-        font-size: 22px;
-        line-height: 33px;
-  
-        color: #FFA3B9;
-        
-    }
+#pic--sobre4 {
+  position: absolute;
+  width: 301px;
+  height: 290.33px;
+  left: 1020px;
+  top: 3829px;
+}
 
-    #pic--dess3{
-        position: absolute;
-        width: 354px;
-        height: 341px;
-        left: 993px;
-        top: 1695px;
-    }
 
-    .container{
-        background-color:white;
-       
-    }
-    
-    /*puntos de venta*/
-    #places{
-    position: absolute;
-    width: 559px;
-    height: 96px;
-    left: 93px;
-    top: 2466px;
-    }
+/*inscripcion a newsletter*/
 
-    #bakery{
-        position: absolute;
-        width: 626px;
-        height: 575px;
-        left: 110px;
-        top: 2626px;
-    }
+#newsletter {
+  position: absolute;
+  width: 308px;
+  height: 36px;
+  left: 494px;
+  top: 4378px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+}
 
-    #location{
-        position: absolute;
-        width: 131px;
-        height: 131px;
-        left: 960px;
-        top: 2636px;    
-    }
+.description--title {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 64px;
+  line-height: 96px;
+}
 
-    #text--places{
-        position: absolute;
-        width: 503px;
-        height: 108px;
-        left: 782px;
-        top: 2914px;
-        
-        font-style: normal;
-        font-weight: normal;
-        font-size: 36px;
-        line-height: 54px;
-    }
+#name {
+  border: none;
+  position: absolute;
+  width: 329px;
+  height: 30px;
+  left: 620px;
+  top: 4444px;
+  background: #F2EDF0;
+  border-radius: 10px;
+}
 
-    #direction{
-        position: absolute;
-        width: 177px;
-        height: 36px;
-        left: 782px;
-        top: 3030px;
-        
-        font-family: Poppins;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 24px;
-        line-height: 36px;
-        
-        color: #000000;
-    }
-    
-    /*sobre nosotras*/
-    #about{
-    position: absolute;
-    width: 554px;
-    height: 96px;
-    left: 93px;
-    top: 3345px;
-    }
-    #us{
-        position: absolute;
-        width: 492px;
-        height: 144px;
-        left: 132px;
-        top: 3912px;
+#email {
+  border: none;
+  position: absolute;
+  width: 329px;
+  height: 30px;
+  left: 620px;
+  top: 4496px;
+  background: #F2EDF0;
+  border-radius: 10px;
+}
 
-        font-style: normal;
-        font-weight: normal;
-        font-size: 24px;
-        line-height: 36px;
-        text-align: center;
-    }
+#phone {
+  border: none;
+  position: absolute;
+  width: 329px;
+  height: 30px;
+  left: 620px;
+  top: 4548px;
+  background: #F2EDF0;
+  border-radius: 10px;
+}
 
-    #right{
-        position: absolute;
-        width: 64px;
-        height: 64px;
-        left: 1330px;
-        top: 2866px;
-    }
+.categories {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+}
 
-    #pic--logo2{
-        position: absolute;
-        width: 338px;
-        height: 338px;
-        left: 209px;
-        top: 3533px;
-    }
 
-    #pic--sobre1{
-        position: absolute;
-        width: 301px;
-        height: 290px;
-        left: 685px;
-        top: 3503px;
-    }
-    #pic--sobre2{
-        position: absolute;
-        width: 301px;
-        height: 290.11px;
-        left: 1020px;
-        top: 3503px;
-    }
-    #pic--sobre3{
-        position: absolute;
-        width: 299px;
-        height: 290px;
-        left: 685px;
-        top: 3829px;    
-    }
-    #pic--sobre4{
-        position: absolute;
-        width: 301px;
-        height: 290.33px;
-        left: 1020px;
-        top: 3829px;   
-    }
-    
-    /*inscripcion a newsletter*/
-    #newsletter{
-    position: absolute;
-    width: 308px;
-    height: 36px;
-    left: 494px;
-    top: 4378px;
-    
+/*footer*/
 
-    font-style: normal;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 36px;
-    }
-    
-    .description--title{
+#apps {
+  position: absolute;
+  width: 204px;
+  height: 36px;
+  left: 123px;
+  top: 4690px;
+}
 
-    font-style: normal;
-    font-weight: normal;
-    font-size: 64px;
-    line-height: 96px;
-    }
-    
-    #name{
-        border: none;
-        position: absolute;
-        width: 329px;
-        height: 30px;
-        left: 620px;
-        top: 4444px;
-        
-   
-        background: #F2EDF0;
-        border-radius: 10px;
-    }
+#contact {
+  position: absolute;
+  width: 114px;
+  height: 36px;
+  left: 1232px;
+  top: 4690px;
+}
 
-  
-    
-    #email{
-        border: none;
-        position: absolute;
-        width: 329px;
-        height: 30px;
-        left: 620px;
-        top: 4496px;
-   
-        background: #F2EDF0;
-        border-radius: 10px;
-    
-    }
-    
-    #phone{
-        border: none;
-        position: absolute;
-        width: 329px;
-        height: 30px;
-        left: 620px;
-        top: 4548px;
+#phones {
+  position: absolute;
+  width: 306px;
+  height: 36px;
+  left: 1044px;
+  top: 4722px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+}
 
-        background: #F2EDF0;
-        border-radius: 10px;
-    }
-    
-    .categories{
+#emails {
+  position: absolute;
+  width: 375px;
+  height: 36px;
+  left: 975px;
+  top: 4761px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+}
 
-    font-style: normal;
-    font-weight: 300;
-    font-size: 24px;
-    line-height: 36px;
-    text-align: center;
-    }
-    
-    /*footer*/
-    #apps{
-        position: absolute;
-        width: 204px;
-        height: 36px;
-        left: 123px;
-        top: 4690px;    
-    }
-    
-    #contact{
-        position: absolute;
-        width: 114px;
-        height: 36px;
-        left: 1232px;
-        top: 4690px;    
-    }
-    
-    #phones{
-        position: absolute;
-        width: 306px;
-        height: 36px;
-        left: 1044px;
-        top: 4722px;   
-    
+.down {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+}
 
-        font-style: normal;
-        font-weight: 300;
-        font-size: 24px;
-        line-height: 36px;
-        text-align: center;
-    }
-    
-    #emails{
-        position: absolute;
-        width: 375px;
-        height: 36px;
-        left: 975px;
-        top: 4761px;
-    
+#instagram {
+  position: absolute;
+  width: 49px;
+  height: 49px;
+  left: 121px;
+  top: 4728px;
+}
 
-        font-style: normal;
-        font-weight: 300;
-        font-size: 24px;
-        line-height: 36px;
-        text-align: center;
-        
-    }
-    
-    .down{
+#whatsapp {
+  position: absolute;
+  width: 47px;
+  height: 47px;
+  left: 177px;
+  top: 4730px;
+}
 
-        font-style: normal;
-        font-weight: 500;
-        font-size: 24px;
-        line-height: 36px;
-        text-align: center;
-        
-    }
+#rappi {
+  position: absolute;
+  height: 46.56px;
+  width: 110px;
+  left: 231px;
+  top: 4736px;
+  border-radius: 0px;
+}
 
-    #instagram{
-        position: absolute;
-        width: 49px;
-        height: 49px;
-        left: 121px;
-        top: 4728px;
-    }
+.foot {
+  background-color: rgba(242, 237, 240, 1);
+}
 
-    #whatsapp{
-        position: absolute;
-        width: 47px;
-        height: 47px;
-        left: 177px;
-        top: 4730px;
-    }
-
-    #rappi{
-        position: absolute;
-        height: 46.56px;
-        width: 110px;
-        left: 231px;
-        top: 4736px;
-        border-radius: 0px;
-
-    }
-    
-    .foot{
-        background-color: rgba(242, 237, 240, 1);
-    }
-    
-    footer{
-        margin-bottom: 200px;
-    }
-    
-    
+footer {
+  margin-bottom: 200px;
+}
