@@ -14,6 +14,10 @@ a{
     text-decoration: none;
 }
 
+header{
+    height: 100px;
+}
+
 /*header*/
 #logo{
     font-style: normal;
@@ -25,10 +29,11 @@ a{
  }
 
  .up{
-    text-align: right;
-    padding: 15px;
-    font-size: 22px;
-    line-height: 33px;
+   
+     color: black;
+     margin-left: 100px;
+     font-size: 22px;
+     line-height: 33px;
   }
 
 #cart{
@@ -154,9 +159,7 @@ top: 41px;
             font-weight: 600;
             font-size: 22px;
             line-height: 33px;
-
-
-color: #FFA3B9;
+            color: #FFA3B9;
         
     }
 
@@ -325,8 +328,37 @@ color: #FFA3B9;
         position: absolute;
         width: 131px;
         height: 131px;
-        left: 955px;
+        left: 960px;
         top: 2636px;    
+    }
+
+    #text--places{
+        position: absolute;
+        width: 503px;
+        height: 108px;
+        left: 782px;
+        top: 2914px;
+        
+        font-style: normal;
+        font-weight: normal;
+        font-size: 36px;
+        line-height: 54px;
+    }
+
+    #direction{
+        position: absolute;
+        width: 177px;
+        height: 36px;
+        left: 782px;
+        top: 3030px;
+        
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 36px;
+        
+        color: #000000;
     }
     
     /*sobre nosotras*/
@@ -420,28 +452,43 @@ color: #FFA3B9;
     }
     
     #name{
-    position: absolute;
-    width: 97px;
-    height: 36px;
-    left: 492px;
-    top: 4440px;
+        border: none;
+        position: absolute;
+        width: 329px;
+        height: 30px;
+        left: 620px;
+        top: 4444px;
+        
+   
+        background: #F2EDF0;
+        border-radius: 10px;
     }
+
+  
     
     #email{
-    position: absolute;
-    width: 82px;
-    height: 36px;
-    left: 492px;
-    top: 4493px;
+        border: none;
+        position: absolute;
+        width: 329px;
+        height: 30px;
+        left: 620px;
+        top: 4496px;
+   
+        background: #F2EDF0;
+        border-radius: 10px;
     
     }
     
     #phone{
+        border: none;
         position: absolute;
-        width: 102px;
-        height: 36px;
-        left: 492px;
-        top: 4545px;
+        width: 329px;
+        height: 30px;
+        left: 620px;
+        top: 4548px;
+
+        background: #F2EDF0;
+        border-radius: 10px;
     }
     
     .categories{
