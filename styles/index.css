@@ -114,22 +114,16 @@ nav {
   height: 435px;
 }
 
-
-
-#cart {
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  left: 90%;
-  top: 4;
+.information__title{
+  font-weight: normal;
+  margin-top: 2%;
+  margin-left: 3%;
+  font-size: 4em;
 }
 
-#user {
-  position: absolute;
-  width: 42px;
-  height: 42px;
-  left: 93%;
-  top: 41px;
+.local__img{
+ margin: 5%;
+ width: 30%;
 }
 
 
