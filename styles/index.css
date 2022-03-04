@@ -124,8 +124,8 @@ nav {
 }
 
 .location__icon{
-    margin: 20%;
-    margin-bottom: 25%;
+    margin-left: 54%;
+    margin-bottom: 5%;
     width: 8%;
 }
 
@@ -153,11 +153,83 @@ width: 100%;
 .logo2__img{
   margin-left: 5%;
 }
+.about__us__description{
+  text-align: justify;
+}
+.inputs{
+  margin-left: 2%;
+}
+
+.label{
+  margin-right: 2%;
+}
+
+ .name{
+  margin-left: 1%;
+  width: 329px;
+  height: 30px;
+  background: #F2EDF0;
+  border-radius: 10px;
+  border: none;
+ }
+
+ .email{
+  margin-left: 1%;
+  width: 329px;
+  height: 30px;
+  background: #F2EDF0;
+  border-radius: 10px;
+  border: none;
+ }
+
+ .phone{
+  margin-left: 1%;
+  width: 329px;
+  height: 30px;
+  background: #F2EDF0;
+  border-radius: 10px;
+  border: none; 
+ }
+
+.cakes__img{
+  justify-content: space-between;
+  margin-left: 40%;
+}
+
+.newsletter__title{
+  margin-left: 40%;
+  margin-top: 5%;
+  margin-bottom: 2%;
+}
+
+footer {
+  margin-top: 3%;
+}
 
 .foot {
   background-color: rgba(242, 237, 240, 1);
 }
 
-footer {
-  margin-bottom: 200px;
+.footer__title{
+  margin-top: 2%;
+  margin-left: 5%;
 }
+
+.contact{
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+
+.apps{
+
+  margin-left: 5%;
+}
+
+.info{
+  display: flex;
+  justify-content: flex-end;
+
+}
+
