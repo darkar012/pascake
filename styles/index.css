@@ -124,7 +124,7 @@ font-weight: lighter;
 .bakery__title{
   font-weight: normal;
   margin-top: 6%;
-  font-size: 4em;
+  font-size: 3.5em;
 }
 
 
@@ -170,8 +170,9 @@ font-weight: lighter;
 .information__title{
   font-weight: normal;
   margin-top: 2%;
-  margin-left: 3%;
-  font-size: 4em;
+  margin-left: 4%;
+  margin-bottom: 2%;
+  font-size: 3.5em;
 }
 
 .local__img{
@@ -193,6 +194,7 @@ margin-left: 85%;
 margin-left: 5%;
 width: 90%;
 }
+
 .location__item{
 background-color:rgba(242, 237, 240, 1);
 width: 100%;
@@ -292,7 +294,6 @@ flex-direction: column;
   margin-top: 5%;
   margin-bottom: 2%;
 }
-
 
 .foot {
   background-color: rgba(242, 237, 240, 1);
