@@ -41,9 +41,13 @@ nav {
   align-items: center;
 }
 
-.menu-item {
+.menu__item{
   margin: 0 10px;
   position: relative;
+}
+
+.menu__item:hover{
+  text-decoration: underline;
 }
 
 .logo {
@@ -60,17 +64,52 @@ nav {
     line-height: 33px;
 }
 
+hr {
+  border:none;
+  border-top:1px dashed #f00;
+  color:#fff;
+  background-color:#fff;
+  height:1px;
+  width:50%;
+}
+
+.banner{
+  margin-top: 3%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.banner__container{
+margin-top: 8%;
+margin-right: 15%;
+}
+
 .banner__img{
   width: 35%;
 }
 
+.dashed{
+  border: 1px dashed #000000;
+}
+
 .banner__title{
+  text-align: center;
+  margin-bottom: 2%;
   font-family: 'Dancing Script', cursive;
   font-size: 6.25em;
 }
 
+.banner__text{
+text-align: center;
+font-size: 1.8em;
+margin-bottom: 2%;
+font-weight: lighter;
+}
+
 .banner__description{
+  font-size: 2em;
   color: #FFA3B9;
+  text-align: center;
 }
 
 
@@ -86,7 +125,7 @@ nav {
 
 .bakery__title{
   font-weight: normal;
-  margin-top: 15%;
+  margin-top: 6%;
   font-size: 4em;
 }
 
@@ -148,14 +187,6 @@ nav {
     width: 8%;
 }
 
-.places__text{
-margin-left: 45%;
-}
-
-.direction{
-margin-left: 45%;  
-}
-
 .right__icon{
 margin-left: 85%;
 }
@@ -170,6 +201,7 @@ width: 100%;
 }
 
 .our__info{
+  background-color:rgba(242, 237, 240, 1);
   margin-top: 8%;
   margin-left: 15%;
   width: 30%;
@@ -179,6 +211,12 @@ width: 100%;
   margin-left: 10%;
   margin-bottom:  10%;
 }
+
+/*.about__us{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}*/
 
 .about__us__description{
   font-weight:lighter;
@@ -244,7 +282,6 @@ width: 100%;
 
 .btn:hover{
   background-color: #F399AF;
-
 }
 
 
@@ -257,6 +294,60 @@ width: 100%;
 
 .foot {
   background-color: rgba(242, 237, 240, 1);
+  display: flex;
+  justify-content: space-between;
 }
 
+.hyperlink{
+  list-style-type:none;
+	padding:0px;
+	display:table;
+	margin-top: 17%;
+	margin-right: auto;
+	margin-bottom: 5%;
+	margin-left: auto;
+
+}
+
+.hyperlink li{
+  display:inline;
+}
+
+.hyperlink li a{
+  color:#999; 
+  margin:0 12px;
+}
+
+.footer__menu:hover{
+  text-decoration: underline;
+}
+
+.apps{
+  margin-top:5%;
+  margin-left: 10%;
+  margin-top:5%;
+}
+
+.info{
+  margin-top:5%;
+  margin-right: 10%;
+  margin-bottom: 5%;
+}
+.footer__title{
+  margin-bottom: 8%;
+  color:#999; 
+}
+.contact{
+  margin-bottom: 2%;
+  color:#999; 
+}
+.phones{
+  font-weight: normal;
+  color:#999; 
+}
+
+.emails{
+  font-weight: normal; 
+  color:#999; 
+}
 
