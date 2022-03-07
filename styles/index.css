@@ -70,6 +70,18 @@ nav {
   justify-content: space-between;
 }
 
+.banner2{
+  margin-top: 3%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.banner3{
+  margin-top: 3%;
+  display: flex;
+  justify-content: space-between;
+}
+
 .banner__container{
 margin-top: 8%;
 margin-right: 15%;
@@ -114,9 +126,6 @@ font-weight: lighter;
       margin-right: 10%;
       }
 
-
-
-
 .bakery {
     padding: 20px 50px;
 }
@@ -137,7 +146,6 @@ font-weight: lighter;
     justify-content: row;
     z-index: 2;
 }
-
 
 .desert {
     width: 25%;
@@ -173,6 +181,15 @@ font-weight: lighter;
   margin-left: 4%;
   margin-bottom: 2%;
   font-size: 3.5em;
+}
+
+.place__info{
+  display: flex;
+  justify-content: space-between;
+}
+
+.places__text{
+  margin-right: 40%;
 }
 
 .local__img{
@@ -238,17 +255,20 @@ width: 100%;
 
 .inputs{
   margin-left: 2%;
-  display: block;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .label{
-  margin-right: 2%;
+margin-left: 5%;
 
 }
 
  .name{
-  margin-left: 1%;
-  width: 329px;
+  margin-bottom: 5%;
+  width: 315px;
   height: 30px;
   background: #F2EDF0;
   border-radius: 10px;
@@ -256,8 +276,8 @@ width: 100%;
  }
 
  .email{
-  margin-left: 1%;
-  width: 329px;
+  margin-bottom: 5%;
+  width: 326px;
   height: 30px;
   background: #F2EDF0;
   border-radius: 10px;
@@ -265,8 +285,8 @@ width: 100%;
  }
 
  .phone{
-  margin-left: 1%;
-  width: 329px;
+  margin-bottom: 5%;
+  width: 311px;
   height: 30px;
   background: #F2EDF0;
   border-radius: 10px;
@@ -274,11 +294,15 @@ width: 100%;
  }
 
 .btn{
+  margin-top: 2%;
+  align-items: center;
+  margin-bottom: 5%;
   width: 10%;
-  height: 25px;
+  height: 30px;
   border-radius: 10px;
   background-color: #FFA3B9;
   border: none;
+  font-family: 'Poppins', sans-serif;
 }
 
 .btn:hover{
@@ -290,7 +314,7 @@ flex-direction: column;
 }
 
 .newsletter__title{
-  margin-left: 40%;
+  text-align: center;
   margin-top: 5%;
   margin-bottom: 2%;
 }
@@ -324,7 +348,6 @@ flex-direction: column;
 .footer__menu:hover{
   text-decoration: underline;
 }
-
 
 .apps{
   margin-top:5%;
