@@ -51,17 +51,21 @@
    
     <section class="banners">
 
-        <div class="banner">
-            <img src="./img/IMGBANNER1.png" alt="" class="banner__img">
-            <div class="banner__container">
-                <h2 class="banner__title">Ven y prueba</h2>
-                <p class="banner__text">NUESTROS DELICIOSOS ROLLITOS DE CANELA 
-                    <br> CON CREMA DE QUESO Y ALMENDRAS.</p>
-                <p class="banner__description">¡Te esperamos!</p>
-            </div>
-        </div>
-
-        <div class="banner2">
+      <ul class="animation">
+          <li>
+            <div class="banner">
+                <img src="./img/IMGBANNER1.png" alt="" class="banner__img">
+                <div class="banner__container">
+                    <h2 class="banner__title">Ven y prueba</h2>
+                    <p class="banner__text">NUESTROS DELICIOSOS ROLLITOS DE CANELA 
+                        <br> CON CREMA DE QUESO Y ALMENDRAS.</p>
+                    <p class="banner__description">¡Te esperamos!</p>
+                </div>
+            </div>    
+          </li>
+       
+          <li>
+            <div class="banner2">
                 <img src="./img/IMGBANNER2.png" alt="" class="banner__img">
                 <div class="banner__container">
                     <h2 class="banner__title">Promoción</h2>
@@ -69,9 +73,10 @@
                         <br>SIN AZÚCAR NI GLUTEN</p>
                     <p class="banner__description">20 x $16000</p>
                 </div>
-
             </div>
-
+          </li>
+        
+          <li>
             <div class="banner3">
                 <img src="./img/IMGBANNER3.png" alt="" class="banner__img">
                 <div class="banner__container3">
@@ -80,8 +85,11 @@
                         <br> CON CAFÉ POR LA MAÑANA O POR LA TARDE</p>
                     <p class="banner__description">12 x $18000</p>
                 </div>
-
-        </div>
+            </div>
+          </li>
+           
+      </ul>
+      
 
 
     </section>
@@ -155,30 +163,32 @@
     </section>
 
     <section class="information">
-        <h3 id="location__id" class="information__title">PUNTOS DE VENTA</h3>
 
-        <div class="location">
+        <div class="location__container">
+            <h3 id="location__id" class="information__title">PUNTOS DE VENTA</h3>
 
-            <div class="location__item">
-                <img class="local__img" src="./img/bakery.png">
-
+            <div class="location">
+    
+                <div class="location__image">
+                    <img class="local__img" src="./img/bakery.png">
+                </div>
+    
                 <div class="place__info">
-                    <img class="location__icon" src="./img/location.png">
+                    <div class="location__icon">
+                        <img class="icon" src="./img/location.png">
+                    </div>
+                    
                     <div class="shop__info">
                         <h3 class="places__text">
                             <br>Barrio San Fernando, Cali Valle del Cauca
                             <br>Calle 4 #27-45
                         </h3>
+                        <h3 class="places__description">Les esperamos en nuestro lugarcito rosa</h3>
                     </div>
-                
                 </div>
-
-                <img class="right__icon" src="./img/caret right.png">
-
             </div>
-
         </div>
-
+       
     </section>
 
     <section class="information">
