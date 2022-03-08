@@ -1,0 +1,104 @@
+
+@media all and (min-width: 1000px) {
+   
+}
+@media all and (max-width: 768px) {
+
+    /*header*/
+    .logo{
+        width: 500px;
+       }
+
+    .menu__item{
+        font-size: 0.6em;
+        margin: 0 15px;
+    }
+
+    /*banner*/
+    .banner__title{
+        font-size:  3em;
+    }
+    .banner__text{
+        font-size: 0.8em;
+    }
+
+     /*tortas y postres*/
+     .bakery__title{
+         font-size: 2em;
+     }
+    .banner__description{
+        font-size: 1em;
+      }
+
+    .desert {
+        width: 50%;
+    }
+
+    .desert__caption{
+        font-size: 0.6em;
+    }
+
+    /*puntos de venta*/
+    .information__title{
+        font-size: 2em;  
+    }
+    .icon{
+        display: block;
+        margin: 0 auto;
+        width: 20%;
+      }
+    .places__text{
+        font-size: 1em;
+    }
+    .direct{
+        font-size: 0.6em;
+      }
+    .places__description{
+        margin-top: 5%;
+        font-size: 0.6em;
+     }
+
+
+    /*sobre nosotras*/
+
+    .about__us__description{
+        font-size: 0.8em;
+        margin-bottom: 0%;
+      }
+      .pics__us{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+        width: 35%;
+      }
+      /*footer*/
+     
+      .apps{
+        font-size: 0.8em; 
+      }
+
+      .info{
+          font-size: 0.8em;
+      }
+
+      .instagram{
+          width: 25%;
+      }
+      .instagram{
+        width: 25%;
+     }
+        .whatsapp{
+        width: 25%;
+        }
+
+        .rappi{
+            width: 45%;
+         }
+
+    .footer__menu{
+        font-size: 0.7em;
+    }
+}
+@media all and (max-width: 400px) {
+ 
+}
