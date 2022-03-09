@@ -90,15 +90,128 @@
         .whatsapp{
         width: 25%;
         }
-
         .rappi{
-            width: 45%;
+        width: 50%;
          }
 
     .footer__menu{
         font-size: 0.7em;
     }
+    .hyperlink{
+        list-style-type:none;
+          padding:0px;
+          display:table;
+          margin-top: 20%;
+          margin-right: auto;
+          margin-bottom: 3%;
+          margin-left: auto;
+      }
+
+      .hyperlink__link{
+          width: 80%;
+      }
 }
+
+
 @media all and (max-width: 400px) {
+
+    /*header*/
+    .logo{
+        width: 1000px;
+    }
+
+    .menu__item{
+        font-size: 0.4em;
+        margin: 0 15px;
+    }
+     /*tortas y postres*/
+
+     .bakery{
+         padding: 5%;
+     }
+     .bakery__title{
+      font-size: 1.2em;
+     }
+    .desert__description{
+        font-size: 0.8em;
+      }
+
+    .desert {
+        width: 50%;
+        margin: 0.5%;
+    }
+    .desert__title{
+        margin-left: 2%;
+        margin-top: 0.5%;
+        font-size: 0.7em;
+      }
+    .desert__caption{
+        padding: 14px;
+    }
+
+    /*puntos de venta*/
+    .information__title{
+        font-size: 1.2em;  
+    }
+    .icon{
+        display: block;
+        margin: 0 auto;
+        width: 20%;
+      }
+    .places__text{
+        font-size: 0.6em;
+    }
+
+    .local__img{
+        margin-left: 6%;
+        width: 90%;
+        margin-bottom: 5%;
+    }
+
+    .location{
+        display: flex;
+        padding: 0 50px;
+      }
+
+    .direct{
+        font-size: 0.4em;
+      }
+    .places__description{
+        margin-top: 5%;
+        font-size: 0.4em;
+     }
+
+    /*sobre nosotras*/
+
+    .about__us{
+        padding: 5%;
+    }
+    .about__us__description{
+        font-size: 0.6em;
+        margin-bottom: 0%;
+      }
+
+      .logo2__img{
+          width: 60%;
+        display: block;
+        margin: 0 auto;
+        margin-top: 5%;
+        margin-bottom: 8%;
+      }
+
+      .pics__us{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+        width: 35%;
+      }
+
+      .pics{
+
+      }
+
+      .cakes__img{
+          width: 40%;
+      }
  
 }

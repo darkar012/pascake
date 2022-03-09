@@ -70,14 +70,40 @@ nav {
   justify-content: space-between;
 }
 
-.banner__container{
-margin-top: 8%;
-margin-right: 15%;
+.banners ul{
+  animation: slideshow 20s infinite alternate linear;
+  
 }
 
 .banner__img{
-  width: 30%;
-  height: 50%;
+  width: 100%;
+}
+
+/*
+@keyframes slideshow {
+  0%{margin-left: 0;}
+  20%{margin-left: 0;}
+  25%{margin-left: -100%;}
+  45%{margin-left: -100%;}
+  50%{margin-left: -200%;}
+  70%{margin-left : -200%;}
+  75%{margin-left: -300%;}
+  100%{margin-left: -300%;}
+}
+
+
+@keyframes slideshow{
+  0%   {margin-left:0px;}
+  25%  {margin-left:-100%;}
+  50%  {margin-left:-200%;}
+  75%  {margin-left:-300%;;}
+  100% {margin-left:-300%;}
+}
+*/
+
+.banner__container{
+margin-top: 8%;
+margin-right: 15%;
 }
 
 .banner__title{
@@ -320,7 +346,6 @@ flex-direction: column;
 	margin-right: auto;
 	margin-bottom: 3%;
 	margin-left: auto;
-
 }
 
 .hyperlink li{
@@ -339,7 +364,6 @@ flex-direction: column;
 .apps{
   margin-top:5%;
   margin-left: 10%;
-  margin-top:5%;
 }
 
 .info{
