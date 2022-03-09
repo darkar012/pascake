@@ -252,12 +252,12 @@
           font-size: 0.7em;
       }
 
-      .inputs{
-
-      }
-
       .btn{
-        width: 25%;
+        font-size: 0.6em;
+        width: 30%;
+        height: 25px;
+        margin-right: 5%;
+        margin-bottom: 0%;
       }
  
 
@@ -301,5 +301,31 @@
     }
     .rappi{
         width: 30%;
+    }
+    .newsletter__item{
+        margin: 15%;
+        width: 70%;
+    }
+    .label{
+        font-size: 0.6em;
+    }
+
+    .inputs{
+        margin-left:5%;
+    }
+
+    .name{
+     width: 210px;
+     height: 20px;
+    }
+
+    .email{
+        width: 210px;
+        height: 20px;
+    }
+
+    .phone{
+        width: 210px;
+        height: 20px;
     }
 }
