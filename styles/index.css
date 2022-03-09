@@ -64,22 +64,22 @@ nav {
     font-size: 1.3em;
 }
 
-.banner{
-  margin-top: 3%;
-  display: flex;
-  justify-content: space-between;
+.banners{
+  width: 100%;
+  overflow: hidden;
 }
 
 .banners ul{
   animation: slideshow 20s infinite alternate linear;
-  
+  display:flex;
+  width: 400%;
+  height: 100%;
 }
 
-.banner__img{
+.banners li{
   width: 100%;
 }
 
-/*
 @keyframes slideshow {
   0%{margin-left: 0;}
   20%{margin-left: 0;}
@@ -90,16 +90,6 @@ nav {
   75%{margin-left: -300%;}
   100%{margin-left: -300%;}
 }
-
-
-@keyframes slideshow{
-  0%   {margin-left:0px;}
-  25%  {margin-left:-100%;}
-  50%  {margin-left:-200%;}
-  75%  {margin-left:-300%;;}
-  100% {margin-left:-300%;}
-}
-*/
 
 .banner__container{
 margin-top: 8%;
@@ -155,6 +145,7 @@ font-weight: lighter;
 .desert__title{
   margin-top: 2%;
 }
+
 
 .deserts {
     display: flex;

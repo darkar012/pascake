@@ -39,6 +39,10 @@
     }
 
     /*puntos de venta*/
+
+    .location{
+        padding: 20px;
+    }
     .information__title{
         font-size: 2em;  
     }
@@ -48,31 +52,42 @@
         width: 20%;
       }
     .places__text{
-        font-size: 1em;
+        font-size: 1.2em;
     }
     .direct{
-        font-size: 0.6em;
+        font-size: 1em;
       }
     .places__description{
         margin-top: 5%;
-        font-size: 0.6em;
+        font-size: 0.8em;
      }
 
-
     /*sobre nosotras*/
-
     .about__us__description{
         font-size: 0.8em;
         margin-bottom: 0%;
       }
+
+    .about__us{
+        padding: 0%;
+        margin-left: 10%;
+    }
+
+    .logo2__img{
+        width: 70%;
+    }
+
       .pics__us{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 10px;
-        width: 35%;
+        width: 100%;
+      }
+
+      .cakes__img{
+        width: 40%; 
       }
       /*footer*/
-     
       .apps{
         font-size: 0.8em; 
       }
@@ -82,17 +97,14 @@
       }
 
       .instagram{
-          width: 25%;
-      }
-      .instagram{
         width: 25%;
      }
-        .whatsapp{
-        width: 25%;
-        }
-        .rappi{
+     .whatsapp{
+         width: 25%;
+    }
+    .rappi{
         width: 50%;
-         }
+    }
 
     .footer__menu{
         font-size: 0.7em;
@@ -110,6 +122,7 @@
       .hyperlink__link{
           width: 80%;
       }
+
 }
 
 
@@ -165,7 +178,7 @@
     .local__img{
         margin-left: 6%;
         width: 90%;
-        margin-bottom: 5%;
+        margin-bottom: 0%;
     }
 
     .location{
@@ -184,15 +197,16 @@
     /*sobre nosotras*/
 
     .about__us{
-        padding: 5%;
+        margin-left: 10% ;
+        padding: 0%;
     }
     .about__us__description{
-        font-size: 0.6em;
+        font-size: 0.5em;
         margin-bottom: 0%;
       }
 
       .logo2__img{
-          width: 60%;
+        width: 50%;
         display: block;
         margin: 0 auto;
         margin-top: 5%;
@@ -203,7 +217,7 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 10px;
-        width: 35%;
+        width: 100%;
       }
 
       .pics{
