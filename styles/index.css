@@ -248,7 +248,7 @@ font-size: 1.2em;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 10px;
-  width: 80%;
+  width: 70%;
 }
 
 .pics{
