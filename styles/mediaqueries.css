@@ -1,17 +1,22 @@
 
-@media all and (min-width: 1000px) {
-   
-}
 @media all and (max-width: 768px) {
 
     /*header*/
+
     .logo{
-        width: 500px;
+        width: 120px;
+       }
+
+       .card{
+           width: 40%;
+       }
+       .user{
+        width: 40%; 
        }
 
     .menu__item{
         font-size: 0.6em;
-        margin: 0 15px;
+        margin: 10px;
     }
 
     /*banner*/
@@ -41,7 +46,7 @@
     /*puntos de venta*/
 
     .location{
-        padding: 20px;
+        padding: 50px;
     }
     .information__title{
         font-size: 2em;  
@@ -51,8 +56,14 @@
         margin: 0 auto;
         width: 20%;
       }
+
     .places__text{
         font-size: 1.2em;
+    }
+
+    .place__info{
+        margin-left: 4%;
+        margin-top: 6%;
     }
     .direct{
         font-size: 1em;
@@ -66,6 +77,7 @@
     .about__us__description{
         font-size: 0.8em;
         margin-bottom: 0%;
+        padding: 2%;
       }
 
     .about__us{
@@ -75,6 +87,7 @@
 
     .logo2__img{
         width: 70%;
+        margin-bottom: 8%;
     }
 
       .pics__us{
@@ -97,31 +110,21 @@
       }
 
       .instagram{
-        width: 25%;
+        width: 17%;
      }
      .whatsapp{
-         width: 25%;
+         width: 17%;
     }
     .rappi{
-        width: 50%;
+        width: 33%;
     }
 
     .footer__menu{
         font-size: 0.7em;
     }
     .hyperlink{
-        list-style-type:none;
-          padding:0px;
-          display:table;
-          margin-top: 20%;
-          margin-right: auto;
-          margin-bottom: 3%;
-          margin-left: auto;
-      }
-
-      .hyperlink__link{
-          width: 80%;
-      }
+        margin-top: 5%;
+    }
 
 }
 
@@ -130,13 +133,35 @@
 
     /*header*/
     .logo{
-        width: 1000px;
+        width: 70px;
     }
 
-    .menu__item{
-        font-size: 0.4em;
-        margin: 0 15px;
+    .header{
+        padding: 20px;
     }
+    .card{
+    width: 25%;
+    }
+    .user{
+     width: 25%; 
+    }
+
+    .icons{
+        margin-left: 2%;
+       width: 15%;
+    }
+
+    .align-items-center {
+        margin-left: 10%;
+        align-items: center;
+      }
+      
+
+    .menu__item{
+        font-size: 0.3em;
+        margin: 4px;
+    }
+
      /*tortas y postres*/
 
      .bakery{
@@ -206,7 +231,7 @@
       }
 
       .logo2__img{
-        width: 50%;
+        width: 80%;
         display: block;
         margin: 0 auto;
         margin-top: 5%;
@@ -219,13 +244,62 @@
         grid-gap: 10px;
         width: 100%;
       }
-
-      .pics{
-
-      }
-
       .cakes__img{
           width: 40%;
       }
+
+      .newsletter__title{
+          font-size: 0.7em;
+      }
+
+      .inputs{
+
+      }
+
+      .btn{
+        width: 25%;
+      }
  
+
+      .footer__title{
+        font-size: 0.8em;
+    }
+
+    .contact{
+        font-size: 0.8em;
+    }
+
+
+    .phones{
+        font-size: 0.7em;
+    }
+    .emails{
+        font-size: 0.7em;
+    }
+
+    .footer__menu{
+        font-size: 0.5em;
+    }
+
+    .apps{
+        margin: 5%;
+    }
+
+    .info{
+        margin: 5%;
+    }
+
+    .hyperlink{
+        margin-top: 0%;
+    }
+
+    .instagram{
+        width: 15%;
+     }
+     .whatsapp{
+         width: 15%;
+    }
+    .rappi{
+        width: 30%;
+    }
 }
