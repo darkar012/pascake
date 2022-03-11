@@ -1,0 +1,183 @@
+/*$maincolor: red;
+$fontsizelarge:50px;
+
+
+h1{
+    color:$maincolor;
+    font-size: $fontsizelarge;
+}
+
+h3{
+    color:$maincolor;
+}*/
+html,
+body {
+  background-color: #f7f7f7;
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/*header*/
+.header {
+  padding: 20px 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+nav {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.align-items-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu__item {
+  margin: 0 10px;
+  position: relative;
+}
+
+.menu__item:hover {
+  text-decoration: underline;
+}
+
+.logo {
+  width: 177px;
+}
+
+.menu__item {
+  margin: 0 20px;
+}
+
+.menu__item:hover {
+  text-decoration: underline;
+}
+
+.logo {
+  width: 177px;
+}
+
+.menu__item a {
+  color: black;
+  font-size: 1.3em;
+}
+
+.banners {
+  width: 100%;
+  overflow: hidden;
+}
+
+.banners ul {
+  -webkit-animation: slideshow 20s infinite alternate linear;
+          animation: slideshow 20s infinite alternate linear;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 400%;
+  height: 100%;
+}
+
+.banners li {
+  width: 100%;
+}
+
+@-webkit-keyframes slideshow {
+  0% {
+    margin-left: 0;
+  }
+  20% {
+    margin-left: 0;
+  }
+  25% {
+    margin-left: -100%;
+  }
+  45% {
+    margin-left: -100%;
+  }
+  50% {
+    margin-left: -200%;
+  }
+  70% {
+    margin-left: -200%;
+  }
+  75% {
+    margin-left: -300%;
+  }
+  100% {
+    margin-left: -300%;
+  }
+}
+
+@keyframes slideshow {
+  0% {
+    margin-left: 0;
+  }
+  20% {
+    margin-left: 0;
+  }
+  25% {
+    margin-left: -100%;
+  }
+  45% {
+    margin-left: -100%;
+  }
+  50% {
+    margin-left: -200%;
+  }
+  70% {
+    margin-left: -200%;
+  }
+  75% {
+    margin-left: -300%;
+  }
+  100% {
+    margin-left: -300%;
+  }
+}
+
+.banner__container {
+  margin-top: 8%;
+  margin-right: 15%;
+}
+
+.banner__title {
+  text-align: center;
+  margin-bottom: 2%;
+  font-family: 'Dancing Script', cursive;
+  font-size: 6.25em;
+}
+/*# sourceMappingURL=styles.css.map */
