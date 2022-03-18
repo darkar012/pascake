@@ -64,6 +64,13 @@ nav {
     font-size: 1.3em;
 }
 
+.color__item{
+  color: #FFA3B9; 
+  font-size: 1em;
+  margin-left: 2%;
+}
+
+
 .banners{
   width: 100%;
   overflow: hidden;
