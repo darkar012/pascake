@@ -5,11 +5,23 @@ body {
   overflow-x: hidden;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
 /*header*/
 
 .header {
-  padding: 20px 50px;
+  padding: 10px 30px;
   display: flex;
   align-items: center;
   width: 100%;
@@ -30,7 +42,8 @@ nav {
 }
 
 .menu__item{
-  margin: 0 10px;
+  margin: 0 30px;
+
   position: relative;
 }
 
@@ -42,19 +55,20 @@ nav {
   width: 177px;
 }
 
-.menu__item {
-    margin: 0 20px;
-}
 
 .menu__item a {
     color: black;
-    font-size: 1.3em;
+    font-size: 1.2em;
 }
 
 .color__item{
   color: #FFA3B9; 
-  font-size: 1em;
+  font-size: 1.3em;
   margin-left: 2%;
+}
+
+.icons{
+  width: 10%;
 }
 
 
