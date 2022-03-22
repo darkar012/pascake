@@ -2,6 +2,7 @@
 //punto 1
 //pintar el username en la web
 const user__name = document.getElementById("user__name");
+const deserts = document.getElementById("user__name");
 
 //objeto user
 const user = {
@@ -65,7 +66,7 @@ const products = [
 ];
 
 //punto 3
-//condicionales: for para recorrer el arreglo de productos y  e if encontrar los que tienen prceio igual o mayor a 30000
+//condicionales: for para recorrer el arreglo de productos y  e if encontrar los que tienen precio igual o mayor a 30000
 
 console.log("Productos con precio igual o mayor a 30000: "); 
   for (let index = 0; index < products.length; index++) {
@@ -82,6 +83,16 @@ console.log("Productos con precio igual o mayor a 30000: ");
       }
   }
 
-  
+//punto 4
+function paint(){
+
+     //Contenedor de productos
+     let container = document.createElement("div");
+     container.className = "bakery__container";
+
+     container.appendChild();
+     return container;
+}
+
 
   
