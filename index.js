@@ -26,6 +26,7 @@ const products = [
     price: 30000,
     description: "x6 porciones",
     categorie: "cakes",
+    image: "./img/cake1.png",
     stock: 3,
 },
 {
@@ -33,6 +34,7 @@ const products = [
     price: 32000,
     description: "x8 porciones",
     categorie: "cakes",
+    image: "./img/cake2.png",
     stock: 2,
 },
 {
@@ -40,6 +42,7 @@ const products = [
     price: 38000,
     description: "x8 porciones",
     categorie: "cakes",
+    image: "./img/cake3.png",
     stock: 4,
 },
 {
@@ -47,6 +50,7 @@ const products = [
     price: 30000,
     description: "x6",
     categorie: "desserts",
+    image: "./img/dess1.png",
     stock: 6,
 },
 {
@@ -54,6 +58,7 @@ const products = [
     price: 16000,
     description: "x4",
     categorie: "desserts",
+    image: "./img/dess2.png",
     stock: 0,
 },
 {
@@ -61,6 +66,7 @@ const products = [
     price: 10000,
     description: "x4",
     categorie: "desserts",
+    image: "./img/dess3.png",
     stock: 12,
 }
 ];
@@ -84,15 +90,43 @@ console.log("Productos con precio igual o mayor a 30000: ");
   }
 
 //punto 4
-function paint(){
 
-     //Contenedor de productos
-     let container = document.createElement("div");
-     container.className = "bakery__container";
+const shopBakery = document.getElementById("bakery");
+function shop(){
+    shopBakery.innerHTML= "";
 
-     container.appendChild();
-     return container;
+    for (let index = 0; index < products.length; index++) {
+        shopBakery.appendChild(paint(products[index]));
+    } 
 }
 
+function paint(products){
 
+    //container
+    let container = document.createElement("div");
+    container.className = "desert";
+
+    //images
+    let image = document.createElement("img");
+    image.className = "desert__img"
+    image.src = products.image;
+
+    //product name
+    let name = document.createElement("h3");
+    name.className = "desert__title";
+    name.innerHTML = products.name;
+
+    //product description
+    let price = document.createElement("p");
+    price.className = "desert__description";
+    price.innerHTML = "$" + products.price + " " + products.description;
+
+    container.appendChild(image);
+    container.appendChild(name);
+    container.appendChild(price);
+
+    return container;
+}
+
+shop();
   
