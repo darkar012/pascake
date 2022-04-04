@@ -17,3 +17,11 @@
     float: left;
     width: 25%;
   }
+
+  ul{
+    list-style: none;
+  }
+  button{
+    border-style: none;
+   background-color: #FFA3B9;
+  }
