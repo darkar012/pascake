@@ -36,19 +36,18 @@
     transform:scale(1.5);
 }
 
-.lightbox{
-    position: absolute;
-    top: 0;
-    right: 0;
+.lightbox {
     width: 100%;
     height: 100%;
-    background: rgba(105, 105, 105, 0.8);
-    z-index: 2;
-    opacity: 0;
-    transform: scale(1.1);
-    transition: all .5s ease;
-    pointer-events: none;
+    position: fixed;
+    background: #000000ad;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
 .lightbox.true{
     opacity: 1;
     transform: scale(1);

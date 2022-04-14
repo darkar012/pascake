@@ -68,6 +68,62 @@ const products = [
     categorie: "desserts",
     image: "./img/dess3.png",
     stock: 12,
+},
+{
+    name: "Cheesecake de frutos rojos",
+    price: 30000,
+    description: "x6 porciones",
+    categorie: "cakes",
+    image: "./img/sobre1.png",
+    stock: 6,
+},
+{
+    name: "Torta de chocolate con arequipe",
+    price: 36000,
+    description: "x8 porciones",
+    categorie: "cakes",
+    image: "./img/sobre2.png",
+    stock: 7,
+},
+{
+    name: "Cheesecake de brownie",
+    price: 34000,
+    description: "x6 porciones",
+    categorie: "cakes",
+    image: "./img/sobre3.png",
+    stock: 2,
+},
+{
+    name: "Pie de fresas",
+    price: 38000,
+    description: "x8 porciones",
+    categorie: "cakes",
+    image: "./img/sobre4.png",
+    stock: 4,
+},
+{
+    name: "Pan con almendras",
+    price: 8000,
+    description: "x6 porciones",
+    categorie: "breads",
+    image: "./img/bread1.jpg",
+    stock: 6,
+},
+{
+    name: "Pan brownie",
+    price: 8000,
+    description: "x6 porciones",
+    categorie: "breads",
+    image: "./img/bread2.jpg",
+    stock: 4,
+},
+{
+    name: "Pan con nueces",
+    price: 8000,
+    description: "x6 porciones",
+    categorie: "breads",
+    image: "./img/bread3.jpg",
+    stock: 8,
 }
 ];
 
@@ -89,7 +145,6 @@ console.log("Productos con precio igual o mayor a 30000: ");
       }
   }
 
-//punto 4
 
 const shopBakery = document.getElementById("bakery");
 function shop(){

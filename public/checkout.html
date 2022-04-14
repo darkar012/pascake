@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="styles/inicio.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pascake | Checkout</title>
+</head>
+<body>
+
+    <header class="header">
+        <nav class="flex">
+            <a href=""><img class="logo" src="./img/logo.jpg" alt="logo"></a>
+
+            <ul class="menu flex align-items-center">
+
+                <li class="color__item">
+                   <h4 id="user__name"></h4>
+                </li>
+
+                <li class="menu__item">
+                    <a href="">INICIO</a>
+                </li>
+
+                <li class="menu__item">
+                    <a href="#delicias__id">NUESTRAS DELICIAS</a>
+                </li>
+
+                <li class="menu__item">
+                    <a href="#location__id">PUNTOS DE VENTA</a>
+                </li>
+
+                <li class="menu__item">
+                    <a href="#aboutus__id">SOBRE NOSOTRAS</a>
+                </li>
+
+                <li class="icons">
+
+                    <a href="#" class="cart">
+                        <img src="./img/shopping-cart.png" alt="">
+                    </a>
+
+                    <a href="#" class="user">
+                        <img src="./img/user.png" alt="">
+                    </a>
+                </li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <div class="cart__container">
+        <div class="shipping__container">
+
+            <h3 class="title__cart">Termina tu compra</h3>
+       
+            <div class="personal__info">
+                <h3 class="description__title">Información de contacto</h3>
+    
+                <input class="login__input" id="phone" type="number" placeholder="Teléfono"/>
+                <input class="login__input" id="email" type="email" placeholder="Correo"/>
+            </div>
+    
+            <div class="shipping__info">
+                <h3 class="description__title">Dirección de envio</h3>
+    
+                <input class="login__input" id="name" type="text" placeholder="Nombre"/>
+                <input class="login__input" id="lastname" type="text" placeholder="Apellido"/>
+                <input class="login__input" id="place" type="text" placeholder="Dirección"/>
+                <input class="login__input" id="date" type="date" placeholder="Fecha de entrega"/>
+            </div>
+            
+        </div>
+
+        <div class="payment__container">
+
+            <h3 class="description__title">Sub total</h3>
+
+            <div class="checkout"></div>
+
+            <h3 class="description__title">Costo de envio</h3>
+
+            <div class="checkout"></div>
+
+            <h3 class="description__title">Total a pagar</h3>
+
+            <div class="checkout"></div>
+
+            <h3 class="description__title">Método de pago</h3>
+
+
+            <div class="payment__method"> Método de pago <select class="select__payment" name="method" id="form__item__dropDownList">
+                <option name="cash" value="cash">Efectivo</option>
+                <option name="card" value="card">Tarjeta de crédito</option>
+            </select> 
+            </div>
+
+            <button class="cart__btn">Comprar</button>
+
+        </div>
+       
+    </div>
+    
+</body>
+</html>
