@@ -11,15 +11,17 @@
     <div class="login__section">
         <img class="logo" src="/public/img/logo.jpg">
         <div class="info__login">
-            <div  class="container__login" id="loginForm">
+            <div  class="container__login" id="logIn">
                 <h1 class="title" >Inicia Sesión</h1>
-                <input class="login__input" id="email" type="email" placeholder="Correo"/>
-                <input class="login__input" id="password" type="password" placeholder="Contraseña"/>
+                <input class="login__input" name="email" type="email" placeholder="Correo"/>
+                <input class="login__input" name="password" type="password" placeholder="Contraseña"/>
                 <button id="loginBtn" class="login__btn">Iniciar Sesión</button>
                 <a class="link__registro" href="">¿No tienes cuenta aún? Regístrate</a>
             </div>
         </div>
     </div>
 </body>
+<script type="module" src="/app.js"></script>
 <script type="module" src="/src/login.js"></script>
+
 </html>
