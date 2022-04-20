@@ -4,7 +4,7 @@ import { getAuth, createUserWithEmailAndPassword} from "firebase/auth";
 
 
  // Initialize Firebase
- const app = initializeApp(firebaseConfig);
+ //const app = initializeApp(firebaseConfig);
  const auth = getAuth();
 
  const createUserForm = document.getElementById("singUp");

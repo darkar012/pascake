@@ -4,11 +4,11 @@ import { getAuth, createUserWithEmailAndPassword} from "firebase/auth";
 
 
  // Initialize Firebase
- const app = initializeApp(firebaseConfig);
+ //const app = initializeApp(firebaseConfig);
  const auth = getAuth();
 
  //modificar nombre
- const loginForm = document.getElementById("logIn");
+ const loginForm = document.getElementById("loginForm");
 
  loginForm.addEventListener("submit", e => {
     e.preventDefault();

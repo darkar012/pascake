@@ -1,7 +1,6 @@
 {
   "name": "pascake",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "dependencies": {
     "firebase": "^9.6.11"
@@ -10,9 +9,8 @@
     "parcel": "^2.4.1"
   },
   "scripts": {
-    "dev":"parcel ./public/login.html",
+    "dev": "parcel ../public/login.html",
     "test": "echo \"Error: no test specified\" && exit 1"
-
   },
   "repository": {
     "type": "git",
@@ -23,5 +21,6 @@
   "bugs": {
     "url": "https://github.com/LinaPeralta/pascake/issues"
   },
-  "homepage": "https://github.com/LinaPeralta/pascake#readme"
+  "homepage": "https://github.com/LinaPeralta/pascake#readme",
+  "description": ""
 }
