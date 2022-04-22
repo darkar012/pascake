@@ -1,15 +1,19 @@
 
+import { async } from "@firebase/util";
 import { initializeApp } from "firebase/app";
 import { getAuth, createUserWithEmailAndPassword} from "firebase/auth";
+import {getFirestore, doc, adDoc} from "firebase/firestore";
+
 
 
  // Initialize Firebase
  //const app = initializeApp(firebaseConfig);
  const auth = getAuth();
+ const db = getFirestore();
+ const createUserForm = document.getElementById("singUpForm");
 
- const createUserForm = document.getElementById("singUp");
  
- createUserForm.addEventListener("submit", e => {
+ createUserForm.addEventListener("submit", async (e) => {
  e.preventDefault();
 
  const name = createUserForm.name.value;
@@ -17,11 +21,22 @@ import { getAuth, createUserWithEmailAndPassword} from "firebase/auth";
  const email = createUserForm. email.value;
  const password = createUserForm.password.value;
 
-  createUser(name,lastname, email, password);
+  const userInfo = {
+    name,
+    lastname,
+    email,
+    password
+
+ };
+
+ const newUser = await createUser(auth, userInfo.email, userInfo.password);
+ await addUserToDatabase(db, newUser.uid, userInfo);
+
+  createUser(name,lastname,email, password);
 
  });
 
-    async function createUser(name, email, password) {
+    async function createUser(email, password) {
         try {
             const { user } = await createUserWithEmailAndPassword(auth, email, password);
             alert(`Bienvenido, usuario ${user.email}`);
@@ -35,4 +50,12 @@ import { getAuth, createUserWithEmailAndPassword} from "firebase/auth";
              alert("Este correo ya se encuentra en uso");
          }
         }
+     }
+
+     async function addUserToDatabase(db, userId, userInfo = {}){
+         try {
+             await setDoc (doc(db, "users", userId), userInfo);
+         } catch (e){
+             console.log(e);
+         }
      }
