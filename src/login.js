@@ -1,6 +1,6 @@
 
 import { initializeApp } from "firebase/app";
-import { getAuth, createUserWithEmailAndPassword} from "firebase/auth";
+import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword} from "firebase/auth";
 
 
  // Initialize Firebase
@@ -16,15 +16,20 @@ import { getAuth, createUserWithEmailAndPassword} from "firebase/auth";
     const email = loginForm.email.value;
     const password = loginForm.password.value;
 
+  
     login(email, password);
+
 });
 
 
 async function login(email, password) {
+    console.log(email, password);
     try {
         const { user } = await signInWithEmailAndPassword(auth, email, password);
         alert(`Bienvenido, usuario ${user.email}`);
     } catch(e) {
+        console.log(e);
         alert("Correo o contraseña inválida :(");
     }
+
 }

@@ -9,7 +9,7 @@
     "parcel": "^2.4.1"
   },
   "scripts": {
-    "dev": "parcel ../public/login.html",
+    "dev": "parcel /Users/lina/Documents/pascake/public/signup.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
