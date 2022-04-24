@@ -1,18 +1,22 @@
 
 import { async } from "@firebase/util";
-import { initializeApp } from "firebase/app";
+import { getdb ,getApp, initializeApp } from "firebase/app";
 import { getAuth, createUserWithEmailAndPassword} from "firebase/auth";
-import {getFirestore, doc, adDoc} from "firebase/firestore";
+//import {getFirestore, doc, adDoc} from "firebase/firestore";
+import { doc, getFirestore, setDoc } from "firebase/firestore";
+
 
 
 
  // Initialize Firebase
+
  //const app = initializeApp(firebaseConfig);
  const auth = getAuth();
- const db = getFirestore();
+ console.log(getdb());
+
+
  const createUserForm = document.getElementById("singUpForm");
 
- 
  createUserForm.addEventListener("submit", async (e) => {
  e.preventDefault();
 
@@ -26,7 +30,6 @@ import {getFirestore, doc, adDoc} from "firebase/firestore";
     lastname,
     email,
     password
-
  };
 
  const newUser = await createUser(auth, userInfo.email, userInfo.password);
