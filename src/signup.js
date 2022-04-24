@@ -1,31 +1,24 @@
 
 import { async } from "@firebase/util";
-import { getdb, getApp, initializeApp } from "firebase/app";
-import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
-//import {getFirestore, doc, adDoc} from "firebase/firestore";
-import { doc, getFirestore, setDoc } from "firebase/firestore";
+import {auth,db} from "../app";
+import {createUserWithEmailAndPassword } from "firebase/auth";
+import { doc,setDoc } from "firebase/firestore";
 
 
 // Initialize Firebase
-
-//const app = initializeApp(firebaseConfig);
-const auth = getAuth();
-const db = getFirestore(getApp());
-console.log(db);
 const createUserForm = document.getElementById("singUpForm");
 
 createUserForm.addEventListener("submit", async (e) => {
     e.preventDefault();
 
- //const app = initializeApp(firebaseConfig);
- const auth = getAuth();
- const db = getFirestore(getApp())
- console.log(db)
+    const name = createUserForm.name.value;
+    const lastName = createUserForm.lastname.value;
+    const email = createUserForm.email.value;
+    const password = createUserForm.password.value;
+    const userInfo = {name,lastName,email,password};
 
-    const newUser = await createUser(auth, userInfo.email, userInfo.password);
-    await addUserToDatabase(db, newUser.uid, userInfo);
-
-    createUser(name, lastname, email, password);
+    const newUser = await createUser(userInfo.email, userInfo.password);
+    await addUserToDatabase(newUser.uid, userInfo);
 
 });
 
@@ -33,6 +26,7 @@ async function createUser(email, password) {
     try {
         const { user } = await createUserWithEmailAndPassword(auth, email, password);
         alert(`Bienvenido, usuario ${user.email}`);
+        return user;
     } catch (e) {
 
         if (e.code === "auth/weak-password") {
@@ -45,7 +39,7 @@ async function createUser(email, password) {
     }
 }
 
-async function addUserToDatabase(db, userId, userInfo = {}) {
+async function addUserToDatabase(userId, userInfo = {}) {
     try {
         await setDoc(doc(db, "users", userId), userInfo);
     } catch (e) {
