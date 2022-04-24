@@ -12,8 +12,8 @@ import { doc, getFirestore, setDoc } from "firebase/firestore";
 
  //const app = initializeApp(firebaseConfig);
  const auth = getAuth();
- console.log(getdb());
-
+ const db = getFirestore(getApp())
+ console.log(db)
 
  const createUserForm = document.getElementById("singUpForm");
 

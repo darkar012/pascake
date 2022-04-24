@@ -18,6 +18,8 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
- function getdb() {
-  return db;
+ function getApp() {
+  return app;
 }
+
+export default getApp;
