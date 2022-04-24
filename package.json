@@ -10,7 +10,7 @@
     "process": "^0.11.10"
   },
   "scripts": {
-    "dev": "parcel /Users/lina/Documents/pascake/public/signup.html",
+    "dev": "parcel /Users/Cristian/Desktop/pascake/pascake/public/signup.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
