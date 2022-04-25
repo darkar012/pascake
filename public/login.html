@@ -5,23 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pascake | Inicio sesión</title>
-    <link rel="stylesheet" href="styles/login.css">
+    <link rel="stylesheet" href="styles/login.scss">
 </head>
 <body>
     <div class="login__section">
         <img class="logo" src="/public/img/logo.jpg">
         <div class="info__login">
-            <div  class="container__login" id="logIn">
-                <h1 class="title" >Inicia Sesión</h1>
 
-                <form action="" id="loginForm">
+                <form action="" id="loginForm"  class="login__form">
+                    <h1 class="title" >Inicia Sesión</h1>
                     <input class="login__input" name="email" type="email" placeholder="Correo"/>
                     <input class="login__input" name="password" type="password" placeholder="Contraseña"/>
                     <input class="login__btn" name="btn" type="submit" id="form__item__Btn">
                     <a class="link__registro" href="">¿No tienes cuenta aún? Regístrate</a>
                 </form>
             </div>
-        </div>
     </div>
 </body>
 <script type="module" src="/app.js"></script>
