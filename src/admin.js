@@ -1,7 +1,8 @@
-
-import { addProduct } from "./addProducts";
+import {db,storage} from '../app';
+import { addProduct, uploadImages } from "./addProducts";
 
 const form = document.getElementById("forms");
+
 
 const itemImage = form.img;
 const itemName = form.name;
@@ -11,7 +12,8 @@ const itemStock = form.stock;
 const itemCategory = form.category;
 const itemSubmit = form.btn;
 
-form.addEventListener("submit",  ev =>{
+
+form.addEventListener("submit", async (ev) =>{
 ev.preventDefault();
 
 if(itemName.value === '' || itemDescription.value ==='' || itemPrice.value === ''){
@@ -26,8 +28,13 @@ if(itemName.value === '' || itemDescription.value ==='' || itemPrice.value === '
     const stock = form.stock.value;
     const category = form.category.value;
 
+    if(img.length){
+     //upload images to firebase
+     await uploadImages(storage, [...img]);
+    }
+
     const newProducts = {
-       // img,
+        img,
         name,
         description,
         price,
@@ -35,8 +42,8 @@ if(itemName.value === '' || itemDescription.value ==='' || itemPrice.value === '
         category
     }
 
-    addProduct(db,newProducts);
-    console.log(newProducts);
+   await addProduct(db,newProducts);
+   
 }
 
 });
