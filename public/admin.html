@@ -52,7 +52,7 @@
     <div class="form__container">
         <h3 class="title__cart">Agrega un nuevo producto</h3>
 <form action="" id="forms">
-    <div class="form__item"> Agrega la foto del producto <input class="file" name="img" type="file" id="form__item__img"> </div>
+    <div class="form__item"> Agrega la foto del producto <input class="file" name="img" accept=".png,.jpg,.jpeg" type="file" id="form__item__img"> </div>
     <div class="form__item" > Nombre del producto <input class="login__input" name="name" type="text" id="form__item__name"> </div>
     <div class="form__item" > Descripción del producto <input class="login__input" name="description" type="text" id="form__item__description"> </div>
     <div class="form__item"> Precio <input class="login__input"  name="price" type="number" id="form__item__price"> </div>
@@ -66,7 +66,7 @@
     <div class="form__item"> <input class="login__btn align-items-center" name="btn" type="submit" id="form__item__Btn"> </div>
 </form>
 </div>
-
-<script src="/src/admin.js"></script>
+<script type="module" src="/app.js"></script>
+<script src="/src/admin.js" type="module"></script>
 </body>
 </html>

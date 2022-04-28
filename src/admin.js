@@ -1,3 +1,6 @@
+
+import { addProduct } from "./addProducts";
+
 const form = document.getElementById("forms");
 
 const itemImage = form.img;
@@ -15,14 +18,25 @@ if(itemName.value === '' || itemDescription.value ==='' || itemPrice.value === '
     alert("Hay campos sin llenar. Por favor llena los campos");
 } else { 
 
-    const products = {
-        name: itemName.value,
-        description: itemDescription.value,
-        price: itemPrice.value,
-        stock: itemStock.value
+
+    const img = form.img.files;
+    const name = form.name.value;
+    const description = form.description.value;
+    const price = form.price.value;
+    const stock = form.stock.value;
+    const category = form.category.value;
+
+    const newProducts = {
+       // img,
+        name,
+        description,
+        price,
+        stock,
+        category
     }
 
-    console.log(products);
+    addProduct(db,newProducts);
+    console.log(newProducts);
 }
 
 });
