@@ -1,4 +1,4 @@
-import {db,storage} from '../app';
+import { db, storage } from '../app';
 import { addProduct, uploadImages } from "./addProducts";
 
 const form = document.getElementById("forms");
@@ -13,38 +13,40 @@ const itemCategory = form.category;
 const itemSubmit = form.btn;
 
 
-form.addEventListener("submit", async (ev) =>{
-ev.preventDefault();
+form.addEventListener("submit", async (ev) => {
+    ev.preventDefault();
 
-if(itemName.value === '' || itemDescription.value ==='' || itemPrice.value === ''){
-    alert("Hay campos sin llenar. Por favor llena los campos");
-} else { 
+    if (itemName.value === '' || itemDescription.value === '' || itemPrice.value === '') {
+        alert("Hay campos sin llenar. Por favor llena los campos");
+    } else {
 
 
-    const img = form.img.files;
-    const name = form.name.value;
-    const description = form.description.value;
-    const price = form.price.value;
-    const stock = form.stock.value;
-    const category = form.category.value;
+        const img = form.img.files;
+        const name = form.name.value;
+        const description = form.description.value;
+        const price = form.price.value;
+        const stock = form.stock.value;
+        const category = form.category.value;
 
-    if(img.length){
-     //upload images to firebase
-     await uploadImages(storage, [...img]);
+        if (img.length) {
+            //upload images to firebase
+            const uploadedImages = await uploadImages(storage, [...img]);
+            
+            console.log(uploadedImages);
+        }
+
+        const newProducts = {
+            // img,
+            name,
+            description,
+            price,
+            stock,
+            category
+        }
+
+        await addProduct(db, newProducts);
+
     }
-
-    const newProducts = {
-        img,
-        name,
-        description,
-        price,
-        stock,
-        category
-    }
-
-   await addProduct(db,newProducts);
-   
-}
 
 });
 
