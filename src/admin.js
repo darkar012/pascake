@@ -28,15 +28,17 @@ form.addEventListener("submit", async (ev) => {
         const stock = form.stock.value;
         const category = form.category.value;
 
+        let gallery = [];
+
         if (img.length) {
             //upload images to firebase
             const uploadedImages = await uploadImages(storage, [...img]);
-            
-            console.log(uploadedImages);
+            gallery = await Promise.all(uploadedImages)
+
         }
 
         const newProducts = {
-            // img,
+            img: gallery,
             name,
             description,
             price,

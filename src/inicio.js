@@ -5,6 +5,8 @@ const grow  = document.querySelector('.big');
 const close   = document.querySelector('.close');
 
 
+//mac caremonda
+
 //products arrays
 const products = [
     {
@@ -12,7 +14,7 @@ const products = [
         price: 30000,
         description: "x6 porciones",
         categorie: "cakes",
-        image: "./img/cake1.png",
+        image: "",
         stock: 3,
     },
     {
@@ -136,9 +138,17 @@ function paint(products){
     price.className = "desert__description";
     price.innerHTML = "$" + products.price + " " + products.description;
 
+
+    // shipping cart btn
+    let cart = document.createElement("button");
+    cart.className = "btn";
+    cart.innerHTML = "Agregar";
+
+
     container.appendChild(image);
     container.appendChild(name);
     container.appendChild(price);
+    container.appendChild(cart);
 
     return container;
 }
