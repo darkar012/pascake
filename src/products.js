@@ -2,7 +2,7 @@
 //punto 1
 //pintar el username en la web
 const user__name = document.getElementById("user__name");
-const deserts = document.getElementById("user__name");
+const desserts = document.getElementById("user__name");
 
 //objeto user
 const user = {
@@ -159,21 +159,21 @@ function paint(products){
 
     //container
     let container = document.createElement("div");
-    container.className = "desert";
+    container.className = "dessert";
 
     //images
     let image = document.createElement("img");
-    image.className = "desert__img"
+    image.className = "dessert__img"
     image.src = products.image;
 
     //product name
     let name = document.createElement("h3");
-    name.className = "desert__title";
+    name.className = "dessert__title";
     name.innerHTML = products.name;
 
     //product description
     let price = document.createElement("p");
-    price.className = "desert__description";
+    price.className = "dessert__description";
     price.innerHTML = "$" + products.price + " " + products.description;
 
     container.appendChild(image);

@@ -122,20 +122,23 @@ async function loadProducts(){
 
 
 function renderProduct(item){
+    console.log(item);
     const product = document.createElement("a");
-    const coverImage = item.images?item.images[0]: "https://cdn.dribbble.com/users/55871/screenshots/2158022/media/95f08ed3812af28b93fa534fb5d277b3.jpg";
+    const coverImage = item.img.length ? item.img[0] : "https://cdn.dribbble.com/users/55871/screenshots/2158022/media/95f08ed3812af28b93fa534fb5d277b3.jpg";
     product.className ="product"; 
     product.setAttribute("href", `./product.html?id%=${item.id}`);
 
 
     product.innerHTML = `
-    <div class="container_bakery"></div>
-    <img src="${coverImage}" alt="" class="desert__img">
-    <div class="desert">
-         <h3 class="desert__caption">${item.name}</h3>
-         <p class="desert__description">$${item.price} ${item.description}</p>
-         <button class="btn">Añadir</button>
-    </div>
+    
+        <div class="dessert"> 
+            <img src="${coverImage}" alt="" class="dessert__img">
+            <h3 class="dessert__caption">${item.name}</h3>
+            <p class="dessert__description">$${item.price} ${item.description}</p>
+            <button class="btn btn__align">Añadir</button>
+        </div>
+    
+   
     `;
  
     shopBakery.appendChild(product);
@@ -160,21 +163,21 @@ function paint(products){
 
     //container
     let container = document.createElement("div");
-    container.className = "desert";
+    container.className = "dessert";
 
     //images
     let image = document.createElement("img");
-    image.className = "desert__img"
+    image.className = "dessert__img"
     image.src = products.image;
 
     //product name
     let name = document.createElement("h3");
-    name.className = "desert__title";
+    name.className = "dessert__title";
     name.innerHTML = products.name;
 
     //product description
     let price = document.createElement("p");
-    price.className = "desert__description";
+    price.className = "dessert__description";
     price.innerHTML = "$" + products.price + " " + products.description;
 
 

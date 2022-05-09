@@ -153,17 +153,17 @@ font-weight: lighter;
 }
 
 
-.desert__title{
+.dessert__title{
   margin-left: 4%;
   margin-top: 4%;
 }
 
-.deserts {
+.desserts {
     display: flex;
     justify-content: row;
 }
 
-.desert {
+.dessert {
   background-color: white;
     width: 70%;
     height: 90%;
@@ -172,7 +172,7 @@ font-weight: lighter;
 
 }
 
-.desert:hover{
+.dessert:hover{
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.18);
 }
 
@@ -182,18 +182,18 @@ font-weight: lighter;
   grid-gap: 5px;
   width: 100%;
 }
-.desert__caption {
+.dessert__caption {
     margin-top: 0%;
     padding: 20px;
 }
 
-.desert__description{
+.dessert__description{
     color: #FFA3B9;
     margin-left: 4%; 
     margin-bottom: 4%;
 }
 
-.desert__img{
+.dessert__img{
   width: 100%
 }
 

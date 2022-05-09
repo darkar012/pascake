@@ -35,11 +35,11 @@
         font-size: 1em;
       }
 
-    .desert {
+    .dessert {
         width: 50%;
     }
 
-    .desert__caption{
+    .dessert__caption{
         font-size: 0.6em;
     }
 
@@ -170,20 +170,20 @@
      .bakery__title{
       font-size: 1.2em;
      }
-    .desert__description{
+    .dessert__description{
         font-size: 0.8em;
       }
 
-    .desert {
+    .dessert {
         width: 50%;
         margin: 0.5%;
     }
-    .desert__title{
+    .dessert__title{
         margin-left: 2%;
         margin-top: 0.5%;
         font-size: 0.7em;
       }
-    .desert__caption{
+    .dessert__caption{
         padding: 14px;
     }
 
