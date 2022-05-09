@@ -13,6 +13,7 @@ body {
 
 a {
   text-decoration: none;
+ color:black;
 }
 
 ul {
@@ -172,6 +173,10 @@ font-weight: lighter;
 
 }
 
+.container_bakery{
+
+}
+
 .desert:hover{
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.18);
 }
@@ -183,6 +188,7 @@ font-weight: lighter;
   width: 100%;
 }
 .desert__caption {
+  color: black;
     margin-top: 0%;
     padding: 20px;
 }
@@ -194,7 +200,7 @@ font-weight: lighter;
 }
 
 .desert__img{
-  width: 100%
+  width: 50%
 }
 
 

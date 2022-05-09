@@ -4,9 +4,10 @@ const lightbox = document.querySelector('.lightbox');
 const grow  = document.querySelector('.big');
 const close   = document.querySelector('.close');
 
+import { db } from "../app";
+import { getProducts } from "./allProducts";
 
-//mac caremonda
-
+/*
 //products arrays
 const products = [
     {
@@ -14,7 +15,7 @@ const products = [
         price: 30000,
         description: "x6 porciones",
         categorie: "cakes",
-        image: "",
+       // image: "",
         stock: 3,
     },
     {
@@ -22,7 +23,7 @@ const products = [
         price: 32000,
         description: "x8 porciones",
         categorie: "cakes",
-        image: "./img/cake2.png",
+       // image: "./img/cake2.png",
         stock: 2,
     },
     {
@@ -30,7 +31,7 @@ const products = [
         price: 38000,
         description: "x8 porciones",
         categorie: "cakes",
-        image: "./img/cake3.png",
+        //image: "./img/cake3.png",
         stock: 4,
     },
     {
@@ -38,7 +39,7 @@ const products = [
         price: 30000,
         description: "x6",
         categorie: "desserts",
-        image: "./img/dess1.png",
+       // image: "./img/dess1.png",
         stock: 6,
     },
     {
@@ -46,7 +47,7 @@ const products = [
         price: 16000,
         description: "x4",
         categorie: "desserts",
-        image: "./img/dess2.png",
+       // image: "./img/dess2.png",
         stock: 0,
     },
     {
@@ -54,7 +55,7 @@ const products = [
         price: 10000,
         description: "x4",
         categorie: "desserts",
-        image: "./img/dess3.png",
+      //  image: "./img/dess3.png",
         stock: 12,
     },
     {
@@ -62,7 +63,7 @@ const products = [
         price: 36000,
         description: "x8 porciones",
         categorie: "cakes",
-        image: "./img/sobre2.png",
+      //  image: "./img/sobre2.png",
         stock: 7,
     },
     {
@@ -70,7 +71,7 @@ const products = [
         price: 34000,
         description: "x6 porciones",
         categorie: "cakes",
-        image: "./img/sobre3.png",
+       // image: "./img/sobre3.png",
         stock: 2,
     },
     {
@@ -78,7 +79,7 @@ const products = [
         price: 38000,
         description: "x8 porciones",
         categorie: "cakes",
-        image: "./img/sobre4.png",
+       // image: "./img/sobre4.png",
         stock: 4,
     },
     {
@@ -86,7 +87,7 @@ const products = [
         price: 9000,
         description: "x6 porciones",
         categorie: "breads",
-        image: "./img/bread1.jpg",
+      //  image: "./img/bread1.jpg",
         stock: 6,
     },
     {
@@ -94,7 +95,7 @@ const products = [
         price: 9000,
         description: "x6 porciones",
         categorie: "breads",
-        image: "./img/bread2.jpg",
+      //  image: "./img/bread2.jpg",
         stock: 4,
     },
     {
@@ -102,13 +103,49 @@ const products = [
         price: 9000,
         description: "x6 porciones",
         categorie: "breads",
-        image: "./img/bread3.jpg",
+      //  image: "./img/bread3.jpg",
         stock: 8,
     }
     ];
-
+*/
 
 const shopBakery = document.getElementById("bakery");
+
+
+async function loadProducts(){
+  const firebaseProducts =  await getProducts(db);
+  firebaseProducts.forEach(product =>{
+    renderProduct(product);
+});
+                                    
+}
+
+
+function renderProduct(item){
+    const product = document.createElement("a");
+    const coverImage = item.images?item.images[0]: "https://cdn.dribbble.com/users/55871/screenshots/2158022/media/95f08ed3812af28b93fa534fb5d277b3.jpg";
+    product.className ="product"; 
+    product.setAttribute("href", `./product.html?id%=${item.id}`);
+
+
+    product.innerHTML = `
+    <div class="container_bakery"></div>
+    <img src="${coverImage}" alt="" class="desert__img">
+    <div class="desert">
+         <h3 class="desert__caption">${item.name}</h3>
+         <p class="desert__description">$${item.price} ${item.description}</p>
+         <button class="btn">Añadir</button>
+    </div>
+    `;
+ 
+    shopBakery.appendChild(product);
+
+}
+
+
+loadProducts();
+
+/*
 function shop(){
     shopBakery.innerHTML= "";
 
@@ -116,6 +153,8 @@ function shop(){
         shopBakery.appendChild(paint(products[index]));
     } 
 }
+
+/*
 
 function paint(products){
 
@@ -171,17 +210,22 @@ enlaces.forEach(( everyLink , i )=>{
         grow.setAttribute('src', link);
 
         /*openLightbox();*/
-        create(title);
+       // create(title);
         
-    })
-})
+//})
+//})
 
+
+/*
 //close elements
 close.addEventListener('click', ()=>{
     lightbox.classList.remove('true');
     lightbox.removeChild(lightbox.lastElementChild);
 })
 
+
+
+/*
 //create p with the product name
 function create(name){
     const productName = document.createElement("p");
@@ -190,4 +234,4 @@ function create(name){
     console.log(productName);
     lightbox.appendChild(productName);
 };
-    
+*/
