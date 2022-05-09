@@ -18,7 +18,6 @@ import {collection,getDocs} from "firebase/firestore";
         console.log(e);
     }
     
-
 }
 
 export{  
