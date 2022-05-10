@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pascake | Añadir producto</title>
 </head>
+
 <body>
     <header class="header">
         <nav class="flex">
@@ -15,7 +17,7 @@
             <ul class="menu flex align-items-center">
 
                 <li class="color__item">
-                   <h4 id="user__name"></h4>
+                    <h4 id="user__name"></h4>
                 </li>
 
                 <li class="menu__item">
@@ -48,25 +50,33 @@
 
         </nav>
     </header>
-   
+
     <div class="form__container">
         <h3 class="title__cart">Agrega un nuevo producto</h3>
-<form action="" id="forms">
-    <div class="form__item"> Agrega la foto del producto <input class="file" name="img" accept=".png,.jpg,.jpeg" type="file" id="form__item__img"> </div>
-    <div class="form__item" > Nombre del producto <input class="login__input" name="name" type="text" id="form__item__name"> </div>
-    <div class="form__item" > Descripción del producto <input class="login__input" name="description" type="text" id="form__item__description"> </div>
-    <div class="form__item"> Precio <input class="login__input"  name="price" type="number" id="form__item__price"> </div>
-    <div class="form__item"> Cantidad en existencia <input class="login__input" name="stock" type="number" id="form__item__stock"> </div>
-    <div class="form__item"> Categoría <select class="select__color" name="category" id="form__item__dropDownList">
-        <option name="cake" value="cakes">Tortas</option>
-        <option name="dessert" value="desserts">Postres</option>
-        <option name="bread" value="breads">Panes</option>
-    </select> 
-</div>
-    <div class="form__item"> <input class="login__btn align-items-center" name="btn" type="submit" id="form__item__Btn"> </div>
-</form>
-</div>
-<script type="module" src="/app.js"></script>
-<script src="/src/createProduct.js " type="module"></script>
+        <form action="" id="forms">
+            <div class="form__item"> Agrega la foto del producto <input class="file" name="img" accept=".png,.jpg,.jpeg"
+                    type="file" id="form__item__img"> </div>
+            <div class="form__item"> Nombre del producto <input class="login__input" name="name" type="text"
+                    id="form__item__name"> </div>
+            <div class="form__item"> Descripción del producto <input class="login__input" name="description" type="text"
+                    id="form__item__description"> </div>
+            <div class="form__item"> Precio <input class="login__input" name="price" type="number"
+                    id="form__item__price"> </div>
+            <div class="form__item"> Cantidad en existencia <input class="login__input" name="stock" type="number"
+                    id="form__item__stock"> </div>
+            <div class="form__item"> Categoría <select class="select__color" name="category"
+                    id="form__item__dropDownList">
+                    <option name="cake" value="cakes">Tortas</option>
+                    <option name="dessert" value="desserts">Postres</option>
+                    <option name="bread" value="breads">Panes</option>
+                </select>
+            </div>
+            <div class="form__item"> <input class="login__btn align-items-center" name="btn" type="submit"
+                    id="form__item__Btn"> </div>
+        </form>
+    </div>
+    <script type="module" src="/app.js"></script>
+    <script src="/src/createProduct.js " type="module"></script>
 </body>
+
 </html>

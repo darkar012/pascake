@@ -8,6 +8,9 @@ import { db } from "../app";
 import { getProducts } from "./allProducts";
 
 const shopBakery = document.getElementById("bakery");
+const categoryFilter = document.getElementById("category"); 
+
+let products = [];
 
 
 async function loadProducts(){
@@ -15,12 +18,12 @@ async function loadProducts(){
   firebaseProducts.forEach(product =>{
     renderProduct(product);
 });
-                                    
+        products = firebaseProducts;                            
 }
 
 
 function renderProduct(item){
-    console.log(item);
+    //console.log(item);
     const product = document.createElement("a");
     const coverImage = item.img.length ? item.img[0] : "https://cdn.dribbble.com/users/55871/screenshots/2158022/media/95f08ed3812af28b93fa534fb5d277b3.jpg";
     product.className ="product"; 
@@ -42,6 +45,28 @@ function renderProduct(item){
     shopBakery.appendChild(product);
 
 }
+
+function filterBy(){
+    
+    const newCategory = categoryFilter.value;
+    let filteredProducts =[];
+
+    if (newCategory !== "") {
+         filteredProducts = products.filter((product) => product.category === newCategory); 
+    } else {
+        filteredProducts = products;
+    }
+
+    shopBakery.innerHTML=""; 
+    filteredProducts.forEach(product=> {
+        renderProduct(product);
+    });
+    
+}
+
+categoryFilter.addEventListener("change",e=>{
+    filterBy();
+});
 
 
 loadProducts();

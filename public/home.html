@@ -7,7 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="styles/home.scss">
     <link rel="stylesheet" href="styles/mediaqueries.css">
     <title>Pascake | home</title>
@@ -23,7 +25,7 @@
             <ul class="menu flex align-items-center">
 
                 <li class="color__item">
-                   <h4 id="user__name"></h4>
+                    <h4 id="user__name"></h4>
                 </li>
 
                 <li class="menu__item">
@@ -56,93 +58,103 @@
         </nav>
     </header>
 
-   
+
     <section class="banners">
 
-    <ul class="animation">
+        <ul class="animation">
 
-        <li>
-            <div class="banner">
-                <img src="./img/BANNER 1.png" alt="" class="banner__img">
-            </div>      
-        </li>
-       
-        <li>
-            <div class="banner">
-                <img src="./img/BANNER 2.png" alt="" class="banner__img">
-            </div> 
-        </li>
+            <li>
+                <div class="banner">
+                    <img src="./img/BANNER 1.png" alt="" class="banner__img">
+                </div>
+            </li>
 
-        <li>
-            <div class="banner">
-                <img src="./img/BANNER 3.png" alt="" class="banner__img">
-            </div> 
-        </li>
+            <li>
+                <div class="banner">
+                    <img src="./img/BANNER 2.png" alt="" class="banner__img">
+                </div>
+            </li>
 
-        <li>
-            <div class="banner">
-                <img src="./img/BANNER 4.png" alt="" class="banner__img">
-            </div> 
-        </li>
-    </ul>
+            <li>
+                <div class="banner">
+                    <img src="./img/BANNER 3.png" alt="" class="banner__img">
+                </div>
+            </li>
+
+            <li>
+                <div class="banner">
+                    <img src="./img/BANNER 4.png" alt="" class="banner__img">
+                </div>
+            </li>
+        </ul>
 
     </section>
 
 
-        <h3 id="delicias__id" class="bakery__title">NUESTRAS DELICIAS</h3>
+    <h3 id="delicias__id" class="bakery__title">NUESTRAS DELICIAS</h3>
 
-        <section class="products__section" id="bakery"></section>
+    <label for="category">Filtrar por categoría</label>
 
-        
+    <select name="category" id="category">
+        <option value="">Todas</option>
+        <option value="cakes">Tortas</option>
+        <option value="desserts">Postres</option>
+        <option value="breads">Panes</option>
+    </select>
+
+    <section class="products__section" id="bakery"></section>
+
+
     <section class="information">
 
         <div class="location__container">
             <h3 id="location__id" class="information__title">PUNTOS DE VENTA</h3>
 
             <div class="location">
-    
+
                 <div class="location__image">
                     <img class="local__img" src="./img/bakery.png">
                 </div>
-    
+
                 <div class="place__info">
                     <div class="location__icon">
                         <img class="icon" src="./img/location.png">
                     </div>
-                    
+
                     <div class="shop__info">
                         <h3 class="places__text">
-                            <br>Barrio San Fernando, Cali Valle del Cauca</h3>
+                            <br>Barrio San Fernando, Cali Valle del Cauca
+                        </h3>
                         <h3 class="direct">Calle 4 #27-45</h3>
                         <h3 class="places__description">Les esperamos en nuestro lugarcito rosa</h3>
                     </div>
                 </div>
             </div>
         </div>
-       
+
     </section>
 
     <section class="information">
         <h3 id="aboutus__id" class="information__title">SOBRE NOSOTRAS</h3>
 
         <div class="about__us">
-        
-                <div class="our__info">
-                    <img class="logo2__img" src="./img/logo2.png">
-                    <p class="about__us__description">Somos una pastelería artesanal familiar creada por tres mujeres,
-                        ofrecemos opciones tradicionales, saludables, sin azucar, sin gluten, veganas y keto.</p>
-        
-                </div>
-              
 
-                <div class="pics__us">
-                    <div class="pics">
-                        <img class="cakes__img" src="./img/sobre1.png">
-                        <img class="cakes__img" src="./img/sobre2.png">
-                        <img class="cakes__img" src="./img/sobre3.png">
-                        <img class="cakes__img" src="./img/sobre4.png">
-                    </div>
+            <div class="our__info">
+                <img class="logo2__img" src="./img/logo2.png">
+                <p class="about__us__description">Somos una pastelería artesanal familiar creada por tres mujeres,
+                    ofrecemos opciones tradicionales, saludables, sin azucar, sin gluten, veganas y keto.</p>
+
+            </div>
+
+
+            <div class="pics__us">
+                <div class="pics">
+                    <img class="cakes__img" src="./img/sobre1.png">
+                    <img class="cakes__img" src="./img/sobre2.png">
+                    <img class="cakes__img" src="./img/sobre3.png">
+                    <img class="cakes__img" src="./img/sobre4.png">
                 </div>
+            </div>
         </div>
 
     </section>
@@ -170,35 +182,37 @@
             <div class="foot">
                 <div class="apps">
                     <h4 class="footer__title">Encuentranos en</h4>
-                    <a  target="_blank" href="https://www.instagram.com/pascake_reposteras/?hl=es"><img class="instagram"  src="./img/instagram.png"></a>
+                    <a target="_blank" href="https://www.instagram.com/pascake_reposteras/?hl=es"><img class="instagram"
+                            src="./img/instagram.png"></a>
                     <img class="whatsapp" src="./img/whatsapp.png">
-                    <a target="_blank" href="https://www.rappi.com.co/restaurantes/900243745"><img class="rappi" src="./img/rappi.png"></a>
+                    <a target="_blank" href="https://www.rappi.com.co/restaurantes/900243745"><img class="rappi"
+                            src="./img/rappi.png"></a>
                 </div>
-    
-    
+
+
                 <div class="info">
                     <h4 class="contact">Contacto</h4>
                     <h4 class="phones">Teléfono: +57 313 6620979</h4>
                     <h4 class="emails">reposteriapascake@gmail.com</h4>
                 </div>
-    
+
 
             </div>
-    
+
             <div class="hyperlink">
                 <ul class="hyperlink__list">
-                <li class="footer__menu"><a href="">INICIO</a></li>
-                <li class="footer__menu"><a href="#delicias__id">NUESTRAS DELICIAS</a></li>
-                <li class="footer__menu"><a href="#location__id">PUNTOS DE VENTA</a></li>
-                <li class="footer__menu"><a href="#aboutus__id">SOBRE NOSOTRAS</a></li>
+                    <li class="footer__menu"><a href="">INICIO</a></li>
+                    <li class="footer__menu"><a href="#delicias__id">NUESTRAS DELICIAS</a></li>
+                    <li class="footer__menu"><a href="#location__id">PUNTOS DE VENTA</a></li>
+                    <li class="footer__menu"><a href="#aboutus__id">SOBRE NOSOTRAS</a></li>
                 </ul>
             </div>
-    
+
         </div>
 
-        
+
     </footer>
-    <script src="/src/home.js" type="module"  ></script>
+    <script src="/src/home.js" type="module"></script>
 </body>
 
 </html>
