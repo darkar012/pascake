@@ -77,17 +77,17 @@ function filterBy() {
     const newCategory = categoryFilter.value;
     const newOrder = orderFilter.value;
     const newVeganism = veganFilter.value;
-    const newSugars = sugarFilter.value;
+   const newSugars = sugarFilter.value;
 
-    let filteredCategory = [];
+ // let filteredCategory = [];
     let filteredProducts = [];
-    let filteredVegan = [];
-    let filteredSugar = [];
+   //let filteredVegan = [];
+  // let filteredSugar = [];
 
     if (newCategory !== "") {
-        filteredCategory = products.filter((product) => product.category === newCategory);
+        filteredProducts = products.filter((product) => product.category === newCategory);
     } else {
-        filteredCategory = products;
+        filteredProducts = products;
     }
 
     if (newOrder === "asc") {
@@ -99,38 +99,19 @@ function filterBy() {
     }
 
     if (newVeganism !== "") {
-        filteredVegan = products.filter((product) => product.vegano === newVeganism);
+        filteredProducts = products.filter((product) => product.vegano === newVeganism);
     } else {
-        filteredVegan = products;
+        filteredProducts = products;
     }
 
     if (newSugars !== "") {
-        filteredSugar = products.filter((product) => product.azucar === newSugars);
+        filteredProducts = products.filter((product) => product.azucar === newSugars);
     } else {
-        filteredSugar = products;
+        filteredProducts = products;
     }
 
-
-
     shopBakery.innerHTML = "";
-
-    filteredCategory.forEach(product => {
-        renderProduct(product);
-    });
-
-
-
     filteredProducts.forEach(product=> {
-        renderProduct(product);
-    });
-
-
-    filteredVegan.forEach(product => {
-        renderProduct(product);
-    });
-
-
-    filteredSugar.forEach(product => {
         renderProduct(product);
     });
 }

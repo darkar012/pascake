@@ -3,10 +3,13 @@ import { onAuthStateChanged } from "firebase/auth";
 import { getFirebaseCart, createFirebaseCart } from "./functions/cart";
 import { addProductToCart } from "../utils/index";
 import { getMyLocalCart, currencyFormat } from "../utils/index";
+import { doc } from 'firebase/firestore';
 
 
 const cartSection = document.getElementById("cart");
 const totalSection = document.getElementById("total");
+const shoppingBtn = document.getElementById("shopping_btn");
+
 let cart = [];
 
 function loadCart(cart) {
@@ -61,6 +64,10 @@ function renderProduct(product) {
         }
    })
 };
+
+shoppingBtn.addEventListener("click", e => {
+    window.location.href = ("../checkout.html");
+})
 
 onAuthStateChanged(auth, async (user) => {
     

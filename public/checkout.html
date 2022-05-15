@@ -20,7 +20,7 @@
                 </li>
 
                 <li class="menu__item">
-                    <a href="">INICIO</a>
+                    <a href="./home.html">INICIO</a>
                 </li>
 
                 <li class="menu__item">
@@ -75,32 +75,21 @@
 
         <div class="payment__container">
 
-            <h3 class="description__title">Sub total</h3>
-
-            <div class="checkout"></div>
-
-            <h3 class="description__title">Costo de envio</h3>
-
-            <div class="checkout"></div>
-
             <h3 class="description__title">Total a pagar</h3>
 
-            <div class="checkout"></div>
-
-            <h3 class="description__title">Método de pago</h3>
-
+            <p id="total_price" class="checkout"></p>
 
             <div class="payment__method"> Método de pago <select class="select__payment" name="method" id="form__item__dropDownList">
-                <option name="cash" value="cash">Efectivo</option>
-                <option name="card" value="card">Tarjeta de crédito</option>
+                <option name="cash" value="Efectivo">Efectivo</option>
+                <option name="card" value="Tarjeta de crédito">Tarjeta de crédito</option>
             </select> 
             </div>
 
-            <button class="cart__btn">Comprar</button>
+            <button  id="cart__btn" class="cart__btn">Comprar</button>
 
         </div>
        
     </div>
-    
+    <script src="../src/checkout.js" type="module"></script>
 </body>
 </html>
