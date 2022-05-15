@@ -152,21 +152,6 @@ nav {
   text-align: center;
 }
 
-.banner__container2 {
-  margin-top: 8%;
-  margin-right: 15%;
-}
-
-.banner__container2 {
-  margin-top: 10%;
-  margin-right: 15%;
-}
-
-.banner__container3 {
-  margin-top: 10%;
-  margin-right: 10%;
-}
-
 .bakery {
   padding: 20px 50px;
 }
@@ -716,6 +701,21 @@ nav {
     width:25%;
     height: 25%;
   }
+}
+
+.filters{
+  margin: 5%;
+}
+
+.select__filters {
+  margin-top: 5%;
+    margin-right: 2%;
+  width: 150px;
+  height: 30px;
+  border: none;
+  border-radius: 10px;
+  background: #F2EDF0;
+  font-family: 'Poppins', sans-serif;
 }
 
 

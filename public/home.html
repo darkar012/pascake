@@ -11,7 +11,7 @@
         href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins:wght@300;400;500;600&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="styles/home.scss">
-    <link rel="stylesheet" href="styles/mediaqueries.css">
+    <link rel="stylesheet" href="styles/mediaqueries.scss">
     <title>Pascake | home</title>
 </head>
 
@@ -47,11 +47,11 @@
                 <li class="icons">
 
                     <a href="./shopping.html" class="cart">
-                        <img src="./img/shopping-cart.png" alt="">
+                        <img class="cart"src="./img/shopping-cart.png" alt="">
                     </a>
 
                     <a href="#" class="user">
-                        <img src="./img/user.png" alt="">
+                        <img  class="user" src="./img/user.png" alt="">
                     </a>
                 </li>
             </ul>
@@ -93,21 +93,36 @@
 
     <h3 id="delicias__id" class="bakery__title">NUESTRAS DELICIAS</h3>
 
-    <label for="category">Filtrar por categoría</label>
+    <div class="filters">
+        <label class="label_filters" for="category">Filtrar por categoría</label>
+        <select class="select__filters" name="category" id="category">
+            <option value="">Todas</option>
+            <option value="cakes">Tortas</option>
+            <option value="desserts">Postres</option>
+            <option value="breads">Panes</option>
+        </select>
 
-    <select name="category" id="category">
-        <option value="">Todas</option>
-        <option value="cakes">Tortas</option>
-        <option value="desserts">Postres</option>
-        <option value="breads">Panes</option>
-    </select>
+        <label for="order">Ordenar por</label>
+        <select class="select__filters" name="order" id="order">
+            <option value="">Selecciona una opción</option>
+            <option value="asc">Precio: De mayor a menor</option>
+            <option value="desc">Precio: De menor a mayor</option>
+        </select>
 
-    <label for="order">Ordenar por</label>
-    <select name="order" id="order">
-        <option value="">Selecciona una opción</option>
-        <option value="asc">Precio: De mayor a menor</option>
-        <option value="desc">Precio: De menor a mayor</option>
-    </select>
+        <label for="veganism">Productos veganos</label>
+        <select class="select__filters" name="veganism" id="veganism">
+            <option value="">Selecciona una opción</option>
+            <option value="si">Vegano</option>
+            <option value="no">No vegano</option>
+        </select>
+
+        <label for="sugars">Productos azucarados</label>
+        <select class="select__filters" name="sugars" id="sugars">
+            <option value="">Selecciona una opción</option>
+            <option value="si">Con azúcar</option>
+            <option value="no">Sin azúcar</option>
+        </select>
+    </div>
 
     <section class="products__section" id="bakery"></section>
 

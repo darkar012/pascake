@@ -1,0 +1,34 @@
+
+
+@media all and (max-width: 768px) {
+
+    /*header*/
+
+    .logo {
+        width: 120px;
+    }
+
+    .cart {
+        margin-left: 5%;
+        width: 30%;
+    }
+
+    .user {
+        width: 30%;
+    }
+
+    .menu__item {
+        font-size: 0.6em;
+        margin: 10px;
+    }
+
+    .product_delete{
+        font-size:.6em;
+      
+    }
+
+}
+
+@media all and (max-width: 400px) {
+    
+}
