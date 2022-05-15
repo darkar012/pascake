@@ -1,6 +1,6 @@
 
 import { async } from "@firebase/util";
-import {auth,db} from "../app";
+import {auth,db} from "./functions/app";
 import {createUserWithEmailAndPassword } from "firebase/auth";
 import { doc,setDoc } from "firebase/firestore";
 
@@ -25,8 +25,10 @@ createUserForm.addEventListener("submit", async (e) => {
 async function createUser(email, password) {
     try {
         const { user } = await createUserWithEmailAndPassword(auth, email, password);
-        alert(`Bienvenido, usuario ${user.email}`);
+        //alert(`Bienvenido, usuario ${user.email}`);
+        window.location.href = "../login.html";
         return user;
+      
     } catch (e) {
 
         if (e.code === "auth/weak-password") {

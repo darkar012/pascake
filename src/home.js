@@ -1,8 +1,9 @@
-import { db, auth } from "../app";
+import { db, auth } from "../src/functions/app";
 import { onAuthStateChanged, getAuth } from "firebase/auth";
-import { getProducts } from "./allProducts";
-import { getFirebaseCart, createFirebaseCart } from "../src/cart"
-import { createFirebaseCart } from "../src/cart"
+import { getProducts } from "../src/functions/allProducts";
+import { getFirebaseCart, createFirebaseCart } from "../src/functions/cart"
+import { createFirebaseCart } from "../src/functions/cart"
+import {addProductToCart,getMyLocalCart,currencyFormat} from "../utils"
 
 const shopBakery = document.getElementById("bakery");
 const categoryFilter = document.getElementById("category");
@@ -46,7 +47,7 @@ function renderProduct(item) {
         <div class="dessert"> 
             <img src="${coverImage}" alt="" class="dessert__img">
             <h3 class="dessert__caption">${item.name}</h3>
-            <p class="dessert__description">$${item.price} ${item.description}</p>
+            <p class="dessert__description">${currencyFormat(item.price)} ${item.description}</p>
             ${productButtonCart}
         </div>`;
 
@@ -59,7 +60,7 @@ function renderProduct(item) {
         e.preventDefault();
 
         cart.push(item);
-        addProductToCart();
+        addProductToCart(cart);
 
         if (userLogged) {
             await createFirebaseCart(db, userLogged.uid, cart);
@@ -71,16 +72,6 @@ function renderProduct(item) {
     });
 
 }
-
-async function addProductToCart() {
-    localStorage.setItem("cart", JSON.stringify(cart));
-}
-
-function getMyCart() {
-    const myCart = localStorage.getItem("cart");
-    return myCart ? JSON.parse(myCart) : [];
-}
-
 
 function filterBy() {
 
@@ -115,14 +106,13 @@ onAuthStateChanged(auth, async (user) => {
         cart = await getFirebaseCart(db, userLogged.uid);
        // console.log(cart);
     } else {
-        cart = getMyCart();
+        cart = getMyLocalCart();
 
     }
 
     loadProducts();
 
 });
-
 
 /*
 

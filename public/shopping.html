@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/home.scss">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pascake | Carrito de compras</title>
 </head>
+
 <body>
 
     <header class="header">
@@ -16,7 +18,7 @@
             <ul class="menu flex align-items-center">
 
                 <li class="color__item">
-                   <h4 id="user__name"></h4>
+                    <h4 id="user__name"></h4>
                 </li>
 
                 <li class="menu__item">
@@ -50,11 +52,16 @@
         </nav>
     </header>
 
-    <div class="cart__container">
-        <h3 class="cart__title">Carrito de compras</h3>
-        <section class="shopping__cart"></section>
-        <button class="cart__btn">Comprar</button>
+    <h3 class="cart__title">Carrito de compras</h3>
+    <ul class="cart" id="cart">
+    </ul>
+
+    <div class="cart_container">
+        <div id="total" class="total"></div>
+        <button class="product_buy" >Ir a pagar</button>
     </div>
-    
+
+    <script src="../src/shopping.js" type="module"></script>
 </body>
+
 </html>
