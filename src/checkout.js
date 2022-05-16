@@ -3,6 +3,7 @@ import { onAuthStateChanged, getAuth } from "firebase/auth";
 import {getFirebaseCart} from "../src/functions/cart"
 import { currencyFormat } from "../utils";
 
+let userLogged = undefined;
 let fullTotal = 0;
 let userId;
 
