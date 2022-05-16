@@ -6,6 +6,7 @@ import { currencyFormat } from "../utils";
 let userLogged = undefined;
 let fullTotal = 0;
 let userId;
+let cart = [];
 
 const totalPrice = document.getElementById("total_price");
 const buy = document.getElementById("cart__btn");
