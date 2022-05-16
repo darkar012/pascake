@@ -11,6 +11,7 @@ const totalSection = document.getElementById("total");
 const shoppingBtn = document.getElementById("shopping_btn");
 
 let cart = [];
+let userLogged = undefined;
 
 function loadCart(cart) {
 
