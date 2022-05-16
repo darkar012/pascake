@@ -67,7 +67,7 @@ function renderProduct(product) {
 };
 
 shoppingBtn.addEventListener("click", e => {
-    window.location.href = ("../checkout.html");
+    window.location.href = ("./checkout.html");
 })
 
 onAuthStateChanged(auth, async (user) => {
