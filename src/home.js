@@ -78,14 +78,13 @@ function renderProduct(item) {
 function filterBy() {
     const newCategory = categoryFilter.value;
     const newOrder = orderFilter.value;
-    const newVegan= veganFilter.value;
+    //const newVegan= veganFilter.value;
 
     let filteredProducts = [];
 
 
     if (newCategory !== "") {
         filteredProducts = products.filter((product) => product.category === newCategory);
-        filteredProducts = products.filter((product) => product.vegano === newVegan);
     } else {
         filteredProducts = products;
     }

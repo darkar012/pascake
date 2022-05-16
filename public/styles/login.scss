@@ -96,3 +96,35 @@ a {
   background: white;
   font-family: 'Poppins', sans-serif;
 }
+
+//mediaqueries
+
+@media all and (max-width: 768px) {
+
+  //login
+  .info__login{
+    width: 90%;
+    margin-top: 5%;
+    margin-left: 5%;
+  }
+}
+
+@media all and (max-width: 400px) {
+   //login
+  .link__registro{
+    font-size: .8em;
+  }
+  //sign up
+  .title{
+    font-size: 1em;
+  }
+
+  .label_filters{
+    font-size: .8em;
+  }
+
+  .container__login{
+    margin: 5%;
+    width: 90%;
+  }
+}

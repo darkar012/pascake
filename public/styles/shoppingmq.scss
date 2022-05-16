@@ -23,11 +23,13 @@
     }
 
     .product_delete{
+        margin: 0;
         font-size:.6em !important;
-        width: 120px !important;
+        width: 20% !important;
         height: 30px !important;
       
     }
+
 
     .product_image {
         width: 100% !important;
@@ -39,6 +41,25 @@
 
     .product_description{
         font-size: .8em !important; 
+    }
+
+    //createProduct
+
+    .form__container{
+        margin-left: 25%;
+    }
+
+    .title__cart{
+     font-size: 1em;
+    }
+
+    .form__item{
+        margin-left: 8%;
+        font-size: .9em;
+    }
+
+    .login__btn{
+        margin-left: 20%;
     }
 
 }
@@ -84,6 +105,35 @@
 
     .product_description{
         font-size: .6em !important; 
+    }
+
+    .product_delete{
+        margin-left: 5%;
+        font-size:1em !important;
+        width: 200px !important;
+        height: 30px !important;
+      
+    }
+
+    .total{
+        font-size:.9em !important;
+        margin-left: 10%;
+    }
+
+    .product_buy{
+        font-size:.6em !important;
+        width: 90px;
+        height: 15px;
+    }
+
+    //createProduct
+
+    .title__cart{
+        font-size: .8em !important; 
+    }
+
+    .create_container{
+        //margin-left: 5%;
     }
     
 }
