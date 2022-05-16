@@ -1,0 +1,294 @@
+@media (max-width: 768px) {
+  .logo {
+    width: 120px;
+  }
+
+  .card, .user {
+    width: 40%;
+  }
+
+  .menu__item {
+    margin: 10px;
+    font-size: .6em;
+  }
+
+  .banner__title {
+    font-size: 3em;
+  }
+
+  .banner__text {
+    font-size: .8em;
+  }
+
+  .bakery__title {
+    font-size: 2em;
+  }
+
+  .banner__description {
+    font-size: 1em;
+  }
+
+  .dessert {
+    width: 50%;
+  }
+
+  .dessert__caption {
+    font-size: .6em;
+  }
+
+  .location {
+    padding: 50px;
+  }
+
+  .information__title {
+    font-size: 2em;
+  }
+
+  .icon {
+    width: 20%;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .places__text {
+    font-size: 1.2em;
+  }
+
+  .place__info {
+    margin-top: 6%;
+    margin-left: 4%;
+  }
+
+  .direct {
+    font-size: 1em;
+  }
+
+  .places__description {
+    margin-top: 5%;
+    font-size: .8em;
+  }
+
+  .about__us__description {
+    margin-bottom: 0%;
+    padding: 2%;
+    font-size: .8em;
+  }
+
+  .about__us {
+    margin-left: 10%;
+    padding: 0%;
+  }
+
+  .logo2__img {
+    width: 70%;
+    margin-bottom: 8%;
+  }
+
+  .pics__us {
+    grid-gap: 10px;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    display: grid;
+  }
+
+  .cakes__img {
+    width: 40%;
+  }
+
+  .apps, .info {
+    font-size: .8em;
+  }
+
+  .instagram, .whatsapp {
+    width: 17%;
+  }
+
+  .rappi {
+    width: 33%;
+  }
+
+  .footer__menu {
+    font-size: .7em;
+  }
+
+  .hyperlink {
+    margin-top: 5%;
+  }
+}
+
+@media (max-width: 400px) {
+  .logo {
+    width: 70px;
+  }
+
+  .header {
+    padding: 20px;
+  }
+
+  .card, .user {
+    width: 25%;
+  }
+
+  .icons {
+    width: 15%;
+    margin-left: 2%;
+  }
+
+  .align-items-center {
+    align-items: center;
+    margin-left: 10%;
+  }
+
+  .menu__item {
+    margin: 4px;
+    font-size: .3em;
+  }
+
+  .bakery {
+    padding: 5%;
+  }
+
+  .bakery__title {
+    font-size: 1.2em;
+  }
+
+  .dessert__description {
+    font-size: .8em;
+  }
+
+  .dessert {
+    width: 50%;
+    margin: .5%;
+  }
+
+  .dessert__title {
+    margin-top: .5%;
+    margin-left: 2%;
+    font-size: .7em;
+  }
+
+  .dessert__caption {
+    padding: 14px;
+  }
+
+  .information__title {
+    font-size: 1.2em;
+  }
+
+  .icon {
+    width: 20%;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .places__text {
+    font-size: .6em;
+  }
+
+  .local__img {
+    width: 90%;
+    margin-bottom: 0%;
+    margin-left: 6%;
+  }
+
+  .location {
+    padding: 0 50px;
+    display: flex;
+  }
+
+  .direct {
+    font-size: .4em;
+  }
+
+  .places__description {
+    margin-top: 5%;
+    font-size: .4em;
+  }
+
+  .about__us {
+    margin-left: 10%;
+    padding: 0%;
+  }
+
+  .about__us__description {
+    margin-bottom: 0%;
+    font-size: .5em;
+  }
+
+  .logo2__img {
+    width: 80%;
+    margin: 5% auto 8%;
+    display: block;
+  }
+
+  .pics__us {
+    grid-gap: 10px;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    display: grid;
+  }
+
+  .cakes__img {
+    width: 40%;
+  }
+
+  .newsletter__title {
+    font-size: .7em;
+  }
+
+  .btn {
+    width: 30%;
+    height: 25px;
+    margin-bottom: 0%;
+    margin-right: 5%;
+    font-size: .6em;
+  }
+
+  .footer__title, .contact {
+    font-size: .8em;
+  }
+
+  .phones, .emails {
+    font-size: .7em;
+  }
+
+  .footer__menu {
+    font-size: .5em;
+  }
+
+  .apps, .info {
+    margin: 5%;
+  }
+
+  .hyperlink {
+    margin-top: 0%;
+  }
+
+  .instagram, .whatsapp {
+    width: 15%;
+  }
+
+  .rappi {
+    width: 30%;
+  }
+
+  .newsletter__item {
+    width: 70%;
+    margin: 15%;
+  }
+
+  .label {
+    font-size: .6em;
+  }
+
+  .inputs {
+    margin-left: 5%;
+  }
+
+  .name, .email, .phone {
+    width: 210px;
+    height: 20px;
+  }
+}
+
+/*# sourceMappingURL=inicio.895968d1.css.map */

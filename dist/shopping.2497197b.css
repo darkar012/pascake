@@ -1,0 +1,116 @@
+@media (max-width: 768px) {
+  .logo {
+    width: 120px;
+  }
+
+  .cart {
+    width: 40%;
+    margin-left: 5%;
+  }
+
+  .user {
+    width: 40%;
+  }
+
+  .menu__item {
+    margin: 10px;
+    font-size: .6em;
+  }
+
+  .product_delete {
+    margin: 0;
+    width: 20% !important;
+    height: 30px !important;
+    font-size: .6em !important;
+  }
+
+  .product_image {
+    width: 100% !important;
+  }
+
+  .product_name {
+    font-size: 1em !important;
+  }
+
+  .product_description {
+    font-size: .8em !important;
+  }
+
+  .form__container {
+    margin-left: 25%;
+  }
+
+  .title__cart {
+    font-size: 1em;
+  }
+
+  .form__item {
+    margin-left: 8%;
+    font-size: .9em;
+  }
+
+  .login__btn {
+    margin-left: 20%;
+  }
+}
+
+@media (max-width: 400px) {
+  .logo {
+    width: 70px;
+  }
+
+  .header {
+    padding: 20px;
+  }
+
+  .cart, .user {
+    width: 35%;
+  }
+
+  .icons {
+    width: 15%;
+    margin-left: 2%;
+  }
+
+  .align-items-center {
+    align-items: center;
+    margin-left: 10%;
+  }
+
+  .menu__item {
+    margin: 4px;
+    font-size: .3em;
+  }
+
+  .product_name {
+    font-size: .8em !important;
+  }
+
+  .product_description {
+    font-size: .6em !important;
+  }
+
+  .product_delete {
+    margin-left: 5%;
+    width: 200px !important;
+    height: 30px !important;
+    font-size: 1em !important;
+  }
+
+  .total {
+    margin-left: 10%;
+    font-size: .9em !important;
+  }
+
+  .product_buy {
+    width: 90px;
+    height: 15px;
+    font-size: .6em !important;
+  }
+
+  .title__cart {
+    font-size: .8em !important;
+  }
+}
+
+/*# sourceMappingURL=shopping.2497197b.css.map */

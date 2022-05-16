@@ -1,12 +1,12 @@
 {
   "name": "pascake",
   "version": "1.0.0",
-  "main": "index.js",
   "dependencies": {
     "firebase": "^9.8.1"
   },
   "scripts": {
     "dev": "parcel ./public/*.html",
+    "build": "parcel build --public-url ./ ./public/*.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

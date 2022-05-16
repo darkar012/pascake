@@ -1,5 +1,4 @@
 
-import { async } from "@firebase/util";
 import {auth,db} from "./functions/app";
 import {createUserWithEmailAndPassword } from "firebase/auth";
 import { doc,setDoc } from "firebase/firestore";
