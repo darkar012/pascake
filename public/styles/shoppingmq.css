@@ -1,0 +1,68 @@
+@media all and (max-width: 768px) {
+  /*header*/
+  .logo {
+    width: 120px;
+  }
+  .cart {
+    margin-left: 5%;
+    width: 40%;
+  }
+  .user {
+    width: 40%;
+  }
+  .menu__item {
+    font-size: 0.6em;
+    margin: 10px;
+  }
+  .product_delete {
+    font-size: .6em !important;
+    width: 120px !important;
+    height: 30px !important;
+  }
+  .product_image {
+    width: 100% !important;
+  }
+  .product_name {
+    font-size: 1em !important;
+  }
+  .product_description {
+    font-size: .8em !important;
+  }
+}
+
+@media all and (max-width: 400px) {
+  /*header*/
+  .logo {
+    width: 70px;
+  }
+  .header {
+    padding: 20px;
+  }
+  .cart {
+    width: 35%;
+  }
+  .user {
+    width: 35%;
+  }
+  .icons {
+    margin-left: 2%;
+    width: 15%;
+  }
+  .align-items-center {
+    margin-left: 10%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .menu__item {
+    font-size: 0.3em;
+    margin: 4px;
+  }
+  .product_name {
+    font-size: .8em !important;
+  }
+  .product_description {
+    font-size: .6em !important;
+  }
+}
+/*# sourceMappingURL=shoppingmq.css.map */

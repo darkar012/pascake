@@ -1,0 +1,347 @@
+@media all and (max-width: 768px) {
+  /*header*/
+  .logo {
+    width: 120px;
+  }
+  .cart {
+    margin-left: 5%;
+    width: 40%;
+  }
+  .user {
+    width: 40%;
+  }
+  .menu__item {
+    font-size: 0.6em;
+    margin: 10px;
+  }
+  /*banner*/
+  .banner__title {
+    font-size: 3em;
+  }
+  .banner__text {
+    font-size: 0.8em;
+  }
+  .banner__img {
+    width: 100%;
+  }
+  /*filtros*/
+  .filters {
+    font-size: 1em;
+  }
+  .select__filters {
+    margin: 2%;
+    width: 100px;
+    height: 20px;
+    font-size: 1em;
+    margin-right: 8%;
+  }
+  /*tortas y postres*/
+  .products__section {
+    display: -ms-grid;
+    display: grid;
+    margin-left: 10%;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    grid-gap: 5px;
+    width: 100%;
+  }
+  .bakery__title {
+    font-size: 1.2em;
+  }
+  .banner__description {
+    font-size: 1em;
+  }
+  .dessert {
+    width: 50%;
+  }
+  .dessert__caption {
+    font-size: 1em;
+  }
+  /*puntos de venta*/
+  .location {
+    padding: 50px;
+  }
+  .information__title {
+    font-size: 1.2em;
+  }
+  .icon {
+    display: block;
+    margin: 0 auto;
+    width: 20%;
+  }
+  .places__text {
+    font-size: 1.2em;
+  }
+  .place__info {
+    margin-left: 4%;
+    margin-top: 6%;
+  }
+  .direct {
+    font-size: 1em;
+  }
+  .places__description {
+    margin-top: 5%;
+    font-size: 0.8em;
+  }
+  /*sobre nosotras*/
+  .about__us__description {
+    font-size: 0.8em;
+    margin-bottom: 0%;
+    padding: 2%;
+  }
+  .about__us {
+    padding: 0%;
+    margin-left: 10%;
+  }
+  .logo2__img {
+    width: 70%;
+    margin-bottom: 8%;
+  }
+  .pics__us {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    width: 100%;
+  }
+  .cakes__img {
+    width: 40%;
+  }
+  /*footer*/
+  .apps {
+    font-size: 0.8em;
+  }
+  .info {
+    font-size: 0.8em;
+  }
+  .instagram {
+    width: 17%;
+  }
+  .whatsapp {
+    width: 17%;
+  }
+  .rappi {
+    width: 33%;
+  }
+  .footer__menu {
+    font-size: 0.7em;
+  }
+  .hyperlink {
+    margin-top: 5%;
+  }
+  .product {
+    margin-top: 8%;
+  }
+  .product__name {
+    font-size: 1.5em;
+  }
+  .product_image {
+    width: 100%;
+  }
+  .product_delete {
+    font-size: 1em;
+  }
+}
+
+@media all and (max-width: 400px) {
+  /*header*/
+  .logo {
+    width: 70px;
+  }
+  .header {
+    padding: 20px;
+  }
+  .cart {
+    width: 35%;
+  }
+  .user {
+    width: 35%;
+  }
+  .icons {
+    margin-left: 2%;
+    width: 15%;
+  }
+  .align-items-center {
+    margin-left: 10%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .menu__item {
+    font-size: 0.3em;
+    margin: 4px;
+  }
+  /*filtros*/
+  .filters {
+    font-size: .7em;
+  }
+  .select__filters {
+    margin: 2%;
+    width: 90px;
+    height: 20px;
+    font-size: 1em;
+    margin-right: 2%;
+  }
+  /*tortas y postres*/
+  .bakery {
+    padding: 5%;
+  }
+  .bakery__title {
+    font-size: 1.2em;
+  }
+  .dessert__description {
+    font-size: 0.8em;
+  }
+  .dessert {
+    width: 50%;
+    margin-left: 15%;
+  }
+  .dessert__title {
+    margin-left: 2%;
+    margin-top: 0.5%;
+    font-size: 0.7em;
+  }
+  .dessert__caption {
+    font-size: .7em;
+  }
+  .dessert__description {
+    font-size: .7em;
+    margin-top: 0;
+    margin-left: 10%;
+  }
+  .product_cart {
+    width: 50%;
+    height: 20px;
+    font-size: .5em;
+  }
+  /*puntos de venta*/
+  .information__title {
+    font-size: 1.2em;
+  }
+  .icon {
+    display: block;
+    margin: 0 auto;
+    width: 20%;
+  }
+  .places__text {
+    font-size: 0.6em;
+  }
+  .local__img {
+    margin-left: 6%;
+    width: 90%;
+    margin-bottom: 0%;
+  }
+  .location {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0 50px;
+  }
+  .direct {
+    font-size: 0.4em;
+  }
+  .places__description {
+    margin-top: 5%;
+    font-size: 0.4em;
+  }
+  /*sobre nosotras*/
+  .about__us {
+    margin-left: 10%;
+    padding: 0%;
+  }
+  .about__us__description {
+    font-size: 0.5em;
+    margin-bottom: 0%;
+  }
+  .logo2__img {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 5%;
+    margin-bottom: 8%;
+  }
+  .pics__us {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    width: 100%;
+  }
+  .cakes__img {
+    width: 40%;
+  }
+  .newsletter__title {
+    font-size: 0.7em;
+  }
+  .btn {
+    font-size: 0.6em;
+    width: 30%;
+    height: 25px;
+    margin-right: 5%;
+    margin-bottom: 0%;
+  }
+  .footer__title {
+    font-size: 0.8em;
+  }
+  .contact {
+    font-size: 0.8em;
+  }
+  .phones {
+    font-size: 0.7em;
+  }
+  .emails {
+    font-size: 0.7em;
+  }
+  .footer__menu {
+    font-size: 0.5em;
+  }
+  .apps {
+    margin: 5%;
+  }
+  .info {
+    margin: 5%;
+  }
+  .hyperlink {
+    margin-top: 0%;
+  }
+  .instagram {
+    width: 15%;
+  }
+  .whatsapp {
+    width: 15%;
+  }
+  .rappi {
+    width: 30%;
+  }
+  .newsletter__item {
+    margin: 15%;
+    width: 70%;
+  }
+  .label {
+    font-size: 0.6em;
+  }
+  .inputs {
+    margin-left: 5%;
+  }
+  .name {
+    width: 210px;
+    height: 20px;
+  }
+  .email {
+    width: 210px;
+    height: 20px;
+  }
+  .phone {
+    width: 210px;
+    height: 20px;
+  }
+  .product__name {
+    font-size: 1.2em;
+  }
+  .product__description {
+    font-size: .8em;
+  }
+}
+/*# sourceMappingURL=mediaqueries.css.map */

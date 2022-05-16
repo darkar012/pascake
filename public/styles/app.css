@@ -1,77 +1,97 @@
-
-
-
 * {
-    box-sizing: border-box;
-  }
-
-  button{
-   color: black;
-   border-style: none;
-   background-color: #FFA3B9;
-   border-radius: 10px;
-  }
-
-.ul{
-    list-style: none;
-    width:80%;
-    padding:1em;
-    display: grid;
-    grid-template-columns: repeat( auto-fit , minmax( 10em , 1fr ) );
-    gap: 1em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-.ul .li{
-    overflow: hidden;
+button {
+  color: black;
+  border-style: none;
+  background-color: #FFA3B9;
+  border-radius: 10px;
 }
 
-.ul .img{
-    min-height: 200px;
-    transition: all .5s ease;
-    transform:scale(1.4);
+.ul {
+  list-style: none;
+  width: 80%;
+  padding: 1em;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(10em, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
+  gap: 1em;
 }
 
+.ul .li {
+  overflow: hidden;
+}
 
-.ul .li:hover .img{
-    transform:scale(1.5);
+.ul .img {
+  min-height: 200px;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
+}
+
+.ul .li:hover .img {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
 }
 
 .lightbox {
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    background: #000000ad;
-    top: 0;
-    left: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background: #000000ad;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.lightbox.true{
-    opacity: 1;
-    transform: scale(1);
-    pointer-events: auto;
-}
-.lightbox .close{
-    width: 5em;
-    height: 3em;
-    margin: 0 0 1em;
-    cursor: pointer;
-}
-.lightbox .big{
-    width: 500px;
-    height:500px;
+.lightbox.true {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  pointer-events: auto;
 }
 
-@keyframes upAnimation{
-
-    from{
-        opacity: 0;
-        transform: translate(-50);
-    }
-
-    to{
-        
-    }
+.lightbox .close {
+  width: 5em;
+  height: 3em;
+  margin: 0 0 1em;
+  cursor: pointer;
 }
+
+.lightbox .big {
+  width: 500px;
+  height: 500px;
+}
+
+@-webkit-keyframes upAnimation {
+  from {
+    opacity: 0;
+    -webkit-transform: translate(-50);
+            transform: translate(-50);
+  }
+  to {
+  }
+}
+
+@keyframes upAnimation {
+  from {
+    opacity: 0;
+    -webkit-transform: translate(-50);
+            transform: translate(-50);
+  }
+  to {
+  }
+}
+/*# sourceMappingURL=app.css.map */

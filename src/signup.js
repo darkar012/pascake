@@ -15,7 +15,8 @@ createUserForm.addEventListener("submit", async (e) => {
     const lastName = createUserForm.lastname.value;
     const email = createUserForm.email.value;
     const password = createUserForm.password.value;
-    const userInfo = {name,lastName,email,password};
+    const admin = createUserForm.admin.value;
+    const userInfo = {name,lastName,email,password,admin};
 
     const newUser = await createUser(userInfo.email, userInfo.password);
     await addUserToDatabase(newUser.uid, userInfo);
@@ -26,9 +27,8 @@ async function createUser(email, password) {
     try {
         const { user } = await createUserWithEmailAndPassword(auth, email, password);
         //alert(`Bienvenido, usuario ${user.email}`);
-        window.location.href = "../login.html";
         return user;
-      
+        
     } catch (e) {
 
         if (e.code === "auth/weak-password") {
@@ -44,6 +44,7 @@ async function createUser(email, password) {
 async function addUserToDatabase(userId, userInfo = {}) {
     try {
         await setDoc(doc(db, "users", userId), userInfo);
+        window.location.href = "../login.html";
     } catch (e) {
         console.log(e);
     }
