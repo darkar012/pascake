@@ -22,7 +22,7 @@ async function login(email, password) {
     try {
         const { user } = await signInWithEmailAndPassword(auth, email, password);
        // alert(`Bienvenido, usuario ${user.email}`);
-        window.location.href = "../home.html";
+        window.location.href = "./home.html";
 
     } catch (e) {
         console.log(e);
