@@ -6,6 +6,8 @@ import { getMyLocalCart, addProductToCart, currencyFormat } from '../utils';
 
 const productInfoSection = document.getElementById("productInfo");
 const productAssetsSection = document.getElementById("productAssets");
+const btnBuy = document.getElementById("btn");
+
 
 let userLogged = undefined;
 let cart = [];
@@ -59,13 +61,17 @@ function renderProduct(product) {
         if (userLogged) {
             createFirebaseCart(db,userLogged.uid,cart);
         }
-
+ 
         productCartButon.setAttribute("disabled", true);
         productCartButon.innerText = "Producto añadido";
     });
 
     // console.log(product);
 }
+
+btnBuy.addEventListener("click", (e) => {
+   window.location.href = ("./index.html");
+});
 
 
 onAuthStateChanged(auth, async (user) => {

@@ -18,7 +18,7 @@
   "bugs": {
     "url": "https://github.com/LinaPeralta/pascake/issues"
   },
-  "homepage": "https://github.com/LinaPeralta/pascake#readme",
+  "indexpage": "https://github.com/LinaPeralta/pascake#readme",
   "description": "",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.5.0",

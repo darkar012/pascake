@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/index.scss">
+    <link rel="stylesheet" href="styles/mediaqueries.scss">
+    <title>Pascake | index</title>
+</head>
+
+<body>
+
+
+    <header class="header">
+        <nav class="flex">
+            <a href=""><img class="logo" src="./img/logo.jpg" alt="logo"></a>
+
+            <ul class="menu flex align-items-center">
+
+                <li class="color__item">
+                    <h4 id="user__name"></h4>
+                </li>
+
+                <li class="menu__item">
+                    <a href="">INICIO</a>
+                </li>
+
+                <li class="menu__item">
+                    <a href="#delicias__id">NUESTRAS DELICIAS</a>
+                </li>
+
+                <li class="menu__item">
+                    <a href="#location__id">PUNTOS DE VENTA</a>
+                </li>
+
+                <li class="menu__item">
+                    <a href="#aboutus__id">SOBRE NOSOTRAS</a>
+                </li>
+
+                <li class="menu__item">
+                    <a href="./createProduct.html">CREAR PRODUCTO</a>
+                </li>
+
+                <li class="menu__item">
+                    <a href="https://linaperalta.github.io/pascakeP5/index.html">TORTAS PERSONALIZADAS</a>
+                </li>
+
+                <li class="icons">
+
+                    <a href="./shopping.html" class="cart">
+                        <img class="cart"src="./img/shopping-cart.png" alt="">
+                    </a>
+
+                    <a href="./signout.html" class="user">
+                        <img  class="user" src="./img/user.png" alt="">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section class="banners">
+
+        <ul class="animation">
+
+            <li>
+                <div class="banner">
+                    <img src="./img/BANNER 1.png" alt="" class="banner__img">
+                </div>
+            </li>
+
+            <li>
+                <div class="banner">
+                    <img src="./img/BANNER 2.png" alt="" class="banner__img">
+                </div>
+            </li>
+
+            <li>
+                <div class="banner">
+                    <img src="./img/BANNER 3.png" alt="" class="banner__img">
+                </div>
+            </li>
+
+            <li>
+                <div class="banner">
+                    <img src="./img/BANNER 4.png" alt="" class="banner__img">
+                </div>
+            </li>
+        </ul>
+
+    </section>
+
+
+    <h3 id="delicias__id" class="bakery__title">NUESTRAS DELICIAS</h3>
+
+    <div class="filters">
+        <label class="label_filters" for="category">Filtrar por categoría</label>
+        <select class="select__filters" name="category" id="category">
+            <option value="">Todas</option>
+            <option value="cakes">Tortas</option>
+            <option value="desserts">Postres</option>
+            <option value="breads">Panes</option>
+        </select>
+
+        <label for="order">Ordenar por</label>
+        <select class="select__filters" name="order" id="order">
+            <option value="">Selecciona una opción</option>
+            <option value="asc">Precio: De mayor a menor</option>
+            <option value="desc">Precio: De menor a mayor</option>
+        </select>
+    </div>
+
+    <section class="products__section" id="bakery"></section>
+
+
+    <section class="information">
+
+        <div class="location__container">
+            <h3 id="location__id" class="information__title">PUNTOS DE VENTA</h3>
+
+            <div class="location">
+
+                <div class="location__image">
+                    <img class="local__img" src="./img/bakery.png">
+                </div>
+
+                <div class="place__info">
+                    <div class="location__icon">
+                        <img class="icon" src="./img/location.png">
+                    </div>
+
+                    <div class="shop__info">
+                        <h3 class="places__text">
+                            <br>Barrio San Fernando, Cali Valle del Cauca
+                        </h3>
+                        <h3 class="direct">Calle 4 #27-45</h3>
+                        <h3 class="places__description">Les esperamos en nuestro lugarcito rosa</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="information">
+        <h3 id="aboutus__id" class="information__title">SOBRE NOSOTRAS</h3>
+
+        <div class="about__us">
+
+            <div class="our__info">
+                <img class="logo2__img" src="./img/logo2.png">
+                <p class="about__us__description">Somos una pastelería artesanal familiar creada por tres mujeres,
+                    ofrecemos opciones tradicionales, saludables, sin azucar, sin gluten, veganas y keto.</p>
+
+            </div>
+
+
+            <div class="pics__us">
+                <div class="pics">
+                    <img class="cakes__img" src="./img/sobre1.png">
+                    <img class="cakes__img" src="./img/sobre2.png">
+                    <img class="cakes__img" src="./img/sobre3.png">
+                    <img class="cakes__img" src="./img/sobre4.png">
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="newsletter">
+
+        <div class="newsletter__item">
+            <h3 class="newsletter__title">INSCRIBETE A NEWSLETTER</h3>
+            <form>
+                <div class="inputs">
+                    <label class="label">Nombre<input type="text" class="name" /></label>
+                    <label class="label">Correo<input type="email" class="email" /></label>
+                    <label class="label">Télefono<input type="text" class="phone" /></label>
+                    <button class="btn">Registrar</button>
+                </div>
+            </form>
+        </div>
+
+    </section>
+
+
+    <footer>
+
+        <div class="footer__container">
+            <div class="foot">
+                <div class="apps">
+                    <h4 class="footer__title">Encuentranos en</h4>
+                    <a target="_blank" href="https://www.instagram.com/pascake_reposteras/?hl=es"><img class="instagram"
+                            src="./img/instagram.png"></a>
+                    <img class="whatsapp" src="./img/whatsapp.png">
+                    <a target="_blank" href="https://www.rappi.com.co/restaurantes/900243745"><img class="rappi"
+                            src="./img/rappi.png"></a>
+                </div>
+
+
+                <div class="info">
+                    <h4 class="contact">Contacto</h4>
+                    <h4 class="phones">Teléfono: +57 313 6620979</h4>
+                    <h4 class="emails">reposteriapascake@gmail.com</h4>
+                </div>
+
+
+            </div>
+
+            <div class="hyperlink">
+                <ul class="hyperlink__list">
+                    <li class="footer__menu"><a href="">INICIO</a></li>
+                    <li class="footer__menu"><a href="#delicias__id">NUESTRAS DELICIAS</a></li>
+                    <li class="footer__menu"><a href="#location__id">PUNTOS DE VENTA</a></li>
+                    <li class="footer__menu"><a href="#aboutus__id">SOBRE NOSOTRAS</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+
+    </footer>
+    <script src="/src/index.js" type="module"></script>
+</body>
+
+</html>

@@ -32,5 +32,5 @@ yesBtn.addEventListener("click", e => {
 
 
 noBtn.addEventListener("click", e => {
-    window.location.href = ("./home.html");
+    window.location.href = ("./index.html");
 })

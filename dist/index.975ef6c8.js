@@ -142,13 +142,13 @@
       this[globalName] = mainExports;
     }
   }
-})({"iQ1TB":[function(require,module,exports) {
+})({"7fmqN":[function(require,module,exports) {
 "use strict";
 var HMR_HOST = null;
 var HMR_PORT = null;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "d6ea1d42532a7575";
-module.bundle.HMR_BUNDLE_ID = "aa45a2dbf895fc6d";
+module.bundle.HMR_BUNDLE_ID = "890e741a975ef6c8";
 function _toConsumableArray(arr) {
     return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread();
 }
@@ -525,29 +525,163 @@ function hmrAcceptRun(bundle, id) {
     acceptedAssets[id] = true;
 }
 
-},{}],"k7mMJ":[function(require,module,exports) {
+},{}],"8lqZg":[function(require,module,exports) {
 var _app = require("../src/functions/app");
 var _auth = require("firebase/auth");
-const yesBtn = document.getElementById("yes__btn");
-const noBtn = document.getElementById("no__btn");
-yesBtn.addEventListener("click", (e1)=>{
-    _auth.onAuthStateChanged(_app.auth, (user)=>{
-        if (user) {
-            const uid = user.uid;
-            const auth = _auth.getAuth();
-            _auth.signOut(auth).then(()=>{
-                window.location.href = "./login.html";
-            }).catch((e)=>{
-                console.log(e);
-            });
-        } else window.location.href = "./login.html";
+var _allProducts = require("../src/functions/allProducts");
+var _cart = require("../src/functions/cart");
+var _utils = require("../utils");
+const shopBakery = document.getElementById("bakery");
+const categoryFilter = document.getElementById("category");
+const orderFilter = document.getElementById("order");
+const veganFilter = document.getElementById("veganism");
+const sugarFilter = document.getElementById("sugars");
+let userLogged = undefined;
+let products = [];
+let cart = [];
+async function loadProducts() {
+    const firebaseProducts = await _allProducts.getProducts(_app.db);
+    shopBakery.innerHTML = "";
+    firebaseProducts.forEach((product)=>{
+        renderProduct(product);
     });
+    products = firebaseProducts;
+}
+function renderProduct(item) {
+    const product = document.createElement("a");
+    product.className = "product";
+    product.setAttribute("href", `./product.html?id=${item.id}`);
+    const coverImage = item.img.length ? item.img[0] : "https://cdn.dribbble.com/users/55871/screenshots/2158022/media/95f08ed3812af28b93fa534fb5d277b3.jpg";
+    const isProductAddedToCart = cart.some((productCart)=>productCart.id === item.id
+    );
+    const productButtonCart = isProductAddedToCart ? '<button class="product_cart" disabled>Producto añadido</button >' : '<button class="product_cart">Añadir al carrito</button>';
+    product.innerHTML = `
+    
+        <div class="dessert"> 
+            <img src="${coverImage}" alt="" class="dessert__img">
+            <h3 class="dessert__caption">${item.name}</h3>
+            <p class="dessert__description">${_utils.currencyFormat(item.price)} ${item.description}</p>
+            ${productButtonCart}
+        </div>`;
+    shopBakery.appendChild(product);
+    const productCartButton = product.querySelector(".product_cart");
+    productCartButton.addEventListener("click", async (e)=>{
+        e.preventDefault();
+        cart.push(item);
+        _utils.addProductToCart(cart);
+        if (userLogged) await _cart.createFirebaseCart(_app.db, userLogged.uid, cart);
+        productCartButton.setAttribute("disabled", true);
+        productCartButton.innerText = "Producto añadido";
+    });
+}
+function filterBy() {
+    const newCategory = categoryFilter.value;
+    const newOrder = orderFilter.value;
+    //const newVegan= veganFilter.value;
+    let filteredProducts = [];
+    if (newCategory !== "") filteredProducts = products.filter((product)=>product.category === newCategory
+    );
+    else filteredProducts = products;
+    if (newOrder === "asc") filteredProducts = filteredProducts.sort((a, b)=>b.price - a.price
+    );
+    if (newOrder === "desc") filteredProducts = filteredProducts.sort((a, b)=>a.price - b.price
+    );
+    shopBakery.innerHTML = "";
+    filteredProducts.forEach((product)=>{
+        renderProduct(product);
+    });
+}
+categoryFilter.addEventListener("change", (e)=>{
+    filterBy();
 });
-noBtn.addEventListener("click", (e)=>{
-    window.location.href = "./index.html";
+orderFilter.addEventListener("change", (e)=>{
+    filterBy();
+});
+/*
+function filterBy() {
+    const newCategory = categoryFilter.value;
+    const newOrder = orderFilter.value;
+    const newVeganism = veganFilter.value;
+    const newSugars = sugarFilter.value;
+
+    // let filteredCategory = [];
+    let filteredProducts = [];
+    //let filteredVegan = [];
+    // let filteredSugar = [];
+
+
+      if (newCategory !== "") {
+          filteredProducts = products.filter((product) => product.category === newCategory);
+      } else {
+          filteredProducts = products;
+      }
+
+
+      if (newCategory !== "") {
+        //Filter for category
+        filteredProducts = products.filter((product) => product.category === newCategory);
+
+        filteredProducts = products.filter((product) => product.vegano === newVeganism);
+
+        filteredProducts = products.filter((product) => product.azucar === newSugars);
+    } else {
+        filteredProducts = products;
+    }
+
+    if (newOrder === "asc") {
+        filteredProducts = filteredProducts.sort((a, b) => b.price - a.price);
+    }
+
+    if (newOrder === "desc") {
+        filteredProducts = filteredProducts.sort((a, b) => a.price - b.price);
+    }
+    /*
+        if (newVeganism !== "") {
+            filteredProducts = products.filter((product) => product.vegano === newVeganism);
+        } else {
+            filteredProducts = products;
+        }
+      
+    
+        if (newSugars !== "") {
+            filteredProducts = products.filter((product) => product.azucar === newSugars);
+        } else {
+            filteredProducts = products;
+        }
+
+
+    shopBakery.innerHTML = "";
+    filteredProducts.forEach(product => {
+        renderProduct(product);
+    });
+}
+
+categoryFilter.addEventListener("change", e => {
+    filterBy();
 });
 
-},{"../src/functions/app":"04vpA","firebase/auth":"drt1f"}],"04vpA":[function(require,module,exports) {
+orderFilter.addEventListener("change", e => {
+    filterBy();
+});
+
+ /*
+veganFilter.addEventListener("change", e => {
+    filterBy();
+});
+
+sugarFilter.addEventListener("change", e => {
+    filterBy();
+});
+*/ //if user is logged
+_auth.onAuthStateChanged(_app.auth, async (user)=>{
+    if (user) {
+        userLogged = user;
+        cart = await _cart.getFirebaseCart(_app.db, userLogged.uid);
+    } else cart = _utils.getMyLocalCart();
+    loadProducts();
+});
+
+},{"../src/functions/app":"04vpA","firebase/auth":"drt1f","../src/functions/allProducts":"esshn","../src/functions/cart":"b7GtJ","../utils":"jklHo"}],"04vpA":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "app", ()=>app
@@ -36569,6 +36703,77 @@ function registerStorage() {
 }
 registerStorage();
 
-},{"@firebase/app":"3AcPV","@firebase/util":"ePiK6","@firebase/component":"bi1VB","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["iQ1TB","k7mMJ"], "k7mMJ", "parcelRequire46c0")
+},{"@firebase/app":"3AcPV","@firebase/util":"ePiK6","@firebase/component":"bi1VB","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"esshn":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "getProducts", ()=>getProducts
+);
+var _firestore = require("firebase/firestore");
+async function getProducts(db) {
+    const collectionRef = _firestore.collection(db, "products");
+    try {
+        const { docs  } = await _firestore.getDocs(collectionRef);
+        const products = docs.map((doc)=>{
+            console.log(doc);
+            return {
+                ...doc.data(),
+                id: doc.id
+            };
+        });
+        return products;
+    } catch (e) {
+        console.log(e);
+    }
+}
 
-//# sourceMappingURL=signout.f895fc6d.js.map
+},{"firebase/firestore":"cJafS","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"b7GtJ":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "getFirebaseCart", ()=>getFirebaseCart
+);
+parcelHelpers.export(exports, "createFirebaseCart", ()=>createFirebaseCart
+);
+var _firestore = require("firebase/firestore");
+async function createFirebaseCart(db, userId, cart) {
+    try {
+        await _firestore.setDoc(_firestore.doc(db, "cart", userId), {
+            cart
+        });
+    } catch (e) {
+        console.log(e);
+    }
+}
+async function getFirebaseCart(db, userId) {
+    const docRef = _firestore.doc(db, "cart", userId);
+    const docSnap = await _firestore.getDoc(docRef);
+    const result = docSnap.data();
+    return result ? result.cart : [];
+}
+
+},{"firebase/firestore":"cJafS","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"jklHo":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "addProductToCart", ()=>addProductToCart
+);
+parcelHelpers.export(exports, "getMyLocalCart", ()=>getMyLocalCart
+);
+parcelHelpers.export(exports, "currencyFormat", ()=>currencyFormat
+);
+async function addProductToCart(cart) {
+    localStorage.setItem("cart", JSON.stringify(cart));
+}
+function getMyLocalCart() {
+    const myCart = localStorage.getItem("cart");
+    return myCart ? JSON.parse(myCart) : [];
+}
+function currencyFormat(price) {
+    return new Intl.NumberFormat("es-CO", {
+        style: 'currency',
+        currency: 'COP',
+        minimumFractionDigits: 0
+    }).format(price);
+}
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["7fmqN","8lqZg"], "8lqZg", "parcelRequire46c0")
+
+//# sourceMappingURL=index.975ef6c8.js.map

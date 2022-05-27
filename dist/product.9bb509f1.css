@@ -16,6 +16,17 @@ html, body {
   margin-left: 2%;
 }
 
+.btn {
+  color: #fff;
+  width: 10%;
+  height: 30px;
+  background-color: #ffa3b9;
+  border: none;
+  border-radius: 10px;
+  margin-left: 85%;
+  font-family: Poppins, sans-serif;
+}
+
 .product {
   align-items: center;
   display: flex;

@@ -142,7 +142,7 @@
       this[globalName] = mainExports;
     }
   }
-})({"71fJ8":[function(require,module,exports) {
+})({"71Rne":[function(require,module,exports) {
 "use strict";
 var HMR_HOST = null;
 var HMR_PORT = null;
@@ -223,7 +223,7 @@ function _arrayLikeToArray(arr, len) {
     for(var i = 0, arr2 = new Array(len); i < len; i++)arr2[i] = arr[i];
     return arr2;
 }
-/* global HMR_HOST, HMR_PORT, HMR_ENV_HASH, HMR_SECURE */ /*::
+/* global HMR_HOST, HMR_PORT, HMR_ENV_HASH, HMR_SECURE, chrome, browser */ /*::
 import type {
   HMRAsset,
   HMRMessage,
@@ -250,11 +250,18 @@ interface ParcelModule {
     _disposeCallbacks: Array<(mixed) => void>,
   |};
 }
+interface ExtensionContext {
+  runtime: {|
+    reload(): void,
+  |};
+}
 declare var module: {bundle: ParcelRequire, ...};
 declare var HMR_HOST: string;
 declare var HMR_PORT: string;
 declare var HMR_ENV_HASH: string;
 declare var HMR_SECURE: boolean;
+declare var chrome: ExtensionContext;
+declare var browser: ExtensionContext;
 */ var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
 function Module(moduleName) {
@@ -309,7 +316,12 @@ if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
                     var id = assetsToAccept[i][1];
                     if (!acceptedAssets[id]) hmrAcceptRun(assetsToAccept[i][0], id);
                 }
-            } else window.location.reload();
+            } else if ('reload' in location) location.reload();
+            else {
+                // Web extension context
+                var ext = typeof chrome === 'undefined' ? typeof browser === 'undefined' ? null : browser : chrome;
+                if (ext && ext.runtime && ext.runtime.reload) ext.runtime.reload();
+            }
         }
         if (data.type === 'error') {
             // Log parcel errors to console
@@ -403,7 +415,7 @@ function reloadCSS() {
             var href = links[i].getAttribute('href');
             var hostname = getHostname();
             var servedFromHMRServer = hostname === 'localhost' ? new RegExp('^(https?:\\/\\/(0.0.0.0|127.0.0.1)|localhost):' + getPort()).test(href) : href.indexOf(hostname + ':' + getPort());
-            var absolute = /^https?:\/\//i.test(href) && href.indexOf(window.location.origin) !== 0 && !servedFromHMRServer;
+            var absolute = /^https?:\/\//i.test(href) && href.indexOf(location.origin) !== 0 && !servedFromHMRServer;
             if (!absolute) updateLink(links[i]);
         }
         cssTimeout = null;
@@ -514,7 +526,6 @@ function hmrAcceptRun(bundle, id) {
 }
 
 },{}],"9At8U":[function(require,module,exports) {
-var _util = require("@firebase/util");
 var _app = require("./functions/app");
 var _auth = require("firebase/auth");
 var _firestore = require("firebase/firestore");
@@ -550,12 +561,12 @@ async function createUser(email, password) {
 async function addUserToDatabase(userId, userInfo = {}) {
     try {
         await _firestore.setDoc(_firestore.doc(_app.db, "users", userId), userInfo);
-        window.location.href = "../login.html";
+        window.location.href = "./login.html";
     } catch (e) {
         console.log(e);
     }
 }
 
-},{"@firebase/util":"ePiK6","firebase/auth":"drt1f","firebase/firestore":"cJafS","./functions/app":"04vpA"}]},["71fJ8","9At8U"], "9At8U", "parcelRequire46c0")
+},{"./functions/app":"04vpA","firebase/auth":"drt1f","firebase/firestore":"cJafS"}]},["71Rne","9At8U"], "9At8U", "parcelRequire46c0")
 
 //# sourceMappingURL=signup.537f356d.js.map
