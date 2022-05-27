@@ -333,8 +333,31 @@ nav {
   border-radius: 10px;
   margin-top: 2%;
   margin-bottom: 10%;
+  margin-left: 2%;
+  font-family: Poppins, sans-serif;
+}
+
+.btnCustome {
+  color: #fff;
+  width: 20%;
+  height: 30px;
+  background-color: #ffa3b9;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 10%;
   margin-left: 6%;
   font-family: Poppins, sans-serif;
+}
+
+.customeText {
+  font-size: 1.3em;
+}
+
+.go {
+  color: #f399af;
+  margin-left: 1%;
+  font-size: 1.3em;
+  text-decoration: underline;
 }
 
 .btn__align {
@@ -642,6 +665,12 @@ nav {
   width: 25%;
   height: 25%;
   margin-top: 15%;
+}
+
+.customeCakes {
+  margin-bottom: 0;
+  margin-left: 5%;
+  display: flex;
 }
 
 .filters {

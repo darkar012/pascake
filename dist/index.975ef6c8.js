@@ -536,6 +536,7 @@ const categoryFilter = document.getElementById("category");
 const orderFilter = document.getElementById("order");
 const veganFilter = document.getElementById("veganism");
 const sugarFilter = document.getElementById("sugars");
+const btnCustome = document.getElementById("customeBtn");
 let userLogged = undefined;
 let products = [];
 let cart = [];
@@ -597,88 +598,16 @@ categoryFilter.addEventListener("change", (e)=>{
 orderFilter.addEventListener("change", (e)=>{
     filterBy();
 });
-/*
-function filterBy() {
-    const newCategory = categoryFilter.value;
-    const newOrder = orderFilter.value;
-    const newVeganism = veganFilter.value;
-    const newSugars = sugarFilter.value;
-
-    // let filteredCategory = [];
-    let filteredProducts = [];
-    //let filteredVegan = [];
-    // let filteredSugar = [];
-
-
-      if (newCategory !== "") {
-          filteredProducts = products.filter((product) => product.category === newCategory);
-      } else {
-          filteredProducts = products;
-      }
-
-
-      if (newCategory !== "") {
-        //Filter for category
-        filteredProducts = products.filter((product) => product.category === newCategory);
-
-        filteredProducts = products.filter((product) => product.vegano === newVeganism);
-
-        filteredProducts = products.filter((product) => product.azucar === newSugars);
-    } else {
-        filteredProducts = products;
-    }
-
-    if (newOrder === "asc") {
-        filteredProducts = filteredProducts.sort((a, b) => b.price - a.price);
-    }
-
-    if (newOrder === "desc") {
-        filteredProducts = filteredProducts.sort((a, b) => a.price - b.price);
-    }
-    /*
-        if (newVeganism !== "") {
-            filteredProducts = products.filter((product) => product.vegano === newVeganism);
-        } else {
-            filteredProducts = products;
-        }
-      
-    
-        if (newSugars !== "") {
-            filteredProducts = products.filter((product) => product.azucar === newSugars);
-        } else {
-            filteredProducts = products;
-        }
-
-
-    shopBakery.innerHTML = "";
-    filteredProducts.forEach(product => {
-        renderProduct(product);
-    });
-}
-
-categoryFilter.addEventListener("change", e => {
-    filterBy();
-});
-
-orderFilter.addEventListener("change", e => {
-    filterBy();
-});
-
- /*
-veganFilter.addEventListener("change", e => {
-    filterBy();
-});
-
-sugarFilter.addEventListener("change", e => {
-    filterBy();
-});
-*/ //if user is logged
+//if user is logged
 _auth.onAuthStateChanged(_app.auth, async (user)=>{
     if (user) {
         userLogged = user;
         cart = await _cart.getFirebaseCart(_app.db, userLogged.uid);
     } else cart = _utils.getMyLocalCart();
     loadProducts();
+});
+btnCustome.addEventListener("click", (e)=>{
+    window.location.href = "https://linaperalta.github.io/pascakeP5/index.html";
 });
 
 },{"../src/functions/app":"04vpA","firebase/auth":"drt1f","../src/functions/allProducts":"esshn","../src/functions/cart":"b7GtJ","../utils":"jklHo"}],"04vpA":[function(require,module,exports) {
