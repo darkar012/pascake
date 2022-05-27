@@ -2,7 +2,6 @@ import { db, auth } from "../src/functions/app";
 import { onAuthStateChanged, getAuth } from "firebase/auth";
 import { getProducts } from "../src/functions/allProducts";
 import { getFirebaseCart, createFirebaseCart } from "../src/functions/cart"
-import { createFirebaseCart } from "../src/functions/cart"
 import { addProductToCart, getMyLocalCart, currencyFormat } from "../utils"
 
 const shopBakery = document.getElementById("bakery");
